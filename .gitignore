@@ -3,7 +3,7 @@
 # dependencies
 /node_modules
 /.pnp
-/Data
+/src/Data
 .pnp.js
 .mp3
 
