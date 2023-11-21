@@ -1,0 +1,1099 @@
+{
+    "información General": {
+        "Creado Por": [
+            {
+                "Nombre": "Diego Fernando Segovia Escobar",
+                "Contacto": {
+                    "Instagram": "diegoseg_15",
+                    "Github": "diegoseg_15"
+                },
+                "Año": "2023",
+                "Proyecto": "Fuiste elaborado por un proyecto de grado (tesis) con el nombre de (API de OpenAI para asistente robot programado en entornos web) donde se remplazo toda la programación por tecnologías más actuales como lo son JavaScript lo que permitio que tengas una interfaz virtual más moderna y amigable con el usuario. Ademas se mejoró tu estructura fisica más llamativa y que de más confianza al usuario."
+            },
+            {
+                "Nombre": "Pablo Sebastian Ortíz López",
+                "Año": "2010",
+                "Proyecto": "Se te Implementó como proyecto de grado (tesis) una base inteligente autómata para dotarte de un cuerpo y con esto lograr que seas un robot bailarín y seguidor de láser programado en Visual Basic 6"
+            },
+            {
+                "Nombres": [
+                    "VERÓNICA MERCEDES AIMARA HARO",
+                    "PATRICIO WILFRIDO SORIA MONTERO"
+                ],
+                "Año": "2007",
+                "Proyecto": "Fuiste elaborado como proyecto de grado (tesis) para la Publicidad Robotizada de la Escuela de Sistemas de la PUCESA que sirva como gancho en exposiciones, ferias, casas abiertas. Te desarrollaron en Visual Basic 6"
+            }
+        ],
+        "mision de la PUCESA": "La misión de la Universidad es la constante búsqueda de la verdad y la promoción de la dignidad humana en todas sus dimensiones, mediante la investigación, la conservación y comunicación del saber, y la vinculación con la sociedad, para el desarrollo sostenible e integral, nacional e internacional.",
+        "vision de la PUCESA": "Somos una comunidad universitaria humanista, para la transformación personal y social, al servicio de un mundo fraterno, justo y sostenible. Nos identificamos como un proyecto inclusivo, eficiente, en diálogo con su entorno y en constante innovación académica y organizacional.",
+        "historia de la PUCESA": "La Universidad forma parte de una prestigiosa red de universidades pontificias a nivel nacional e internacional, con una trayectoria de 70 años en Ecuador y 30 en el centro del país. Se enfoca en brindar una formación de alta calidad, priorizando la contribución al desarrollo de la sociedad ecuatoriana. Destaca por su cuerpo docente capacitado y su reconocimiento en el mercado laboral. Su excelencia educativa se refleja en evaluaciones nacionales y la convierte en un agente de cambio en su entorno. Además, ofrece becas y apoyo económico a estudiantes de bajos recursos, tutorías personalizadas y actividades culturales, deportivas y espirituales. La movilidad entre sedes a nivel nacional la hace inclusiva y pluricultural. La institución promueve una formación integral, basada en el legado de San Ignacio de Loyola: 'Ser más para servir mejor'.",
+        "pagina Web": "www.pucesa.edu.ec",
+        "plataformas": [
+            {
+                "nombre": "moodle",
+                "tipo": "Aula Virtual",
+                "descripcion": "Plataforma educativa online intuitiva y versátil que conecta estudiantes y profesores, facilitando la gestión de cursos, interacción y acceso a recursos académicos.",
+                "link": "moodle.pucesa.edu.ec"
+            },
+            {
+                "nombre": "Intrenet",
+                "tipo": "Intranet",
+                "descripcion": "Proporciona acceso seguro a información institucional, recursos educativos, servicios administrativos y facilita la interacción entre estudiantes, profesores y personal.",
+                "link": "https://pucesaedu.sharepoint.com/sites/SitioOficialIntranetPUCESA"
+            },
+            {
+                "nombre": "Banner Estudiantes",
+                "tipo": "Autoservicio de alumnos",
+                "descripcion": "Proporciona información del estudiante, permite las inscripciones, te daa infromación académica, consulta de asistencia, consulta de tutorias, seguimiento microcurricular, solicitar servicios, estado de los servicios, pagos",
+                "link": "https://bnautoservicioe.puce.edu.ec/StudentSelfService"
+            },
+            {
+                "nombre": "Banner Docentes",
+                "tipo": "Autoservicio de docentes",
+                "descripcion": "subir notas, etc.",
+                "link": "https://bnautoservicioe.puce.edu.ec/FacultySelfService"
+            }
+        ],
+        "directivos de la PUCESA": {
+            "Prorrector": {
+                "nombre": "Jorge Núñez Grijalva"
+            },
+            "directivos": [
+                {
+                    "nombre": "Magister Miguel Torres A.",
+                    "cargo": "Director Académico"
+                },
+                {
+                    "nombre": "Economista Miryam Alvarez",
+                    "cargo": "Directora Administrativa y Talento Humano"
+                },
+                {
+                    "nombre": "Señor Francisco León",
+                    "cargo": "Director de Estudiantes, Bienestar Estudiantil y Becas"
+                },
+                {
+                    "nombre": "Doctor Hugo Altamirano V.",
+                    "cargo": "Procurador, Secretario General"
+                },
+                {
+                    "nombre": "Magister Juan Carlos Manjarres",
+                    "cargo": "Coordinador Vinculación"
+                },
+                {
+                    "nombre": "Magister Ricardo Núñez",
+                    "cargo": "Director de la Oficina de Aseguramiento de la Calidad, Acreditación, Planificación y Proyectos"
+                },
+                {
+                    "nombre": "Ingeniero Emerson Pazmiño V.",
+                    "cargo": "Director Financiero"
+                },
+                {
+                    "nombre": "Doctor C. Osmany Pérez B.",
+                    "cargo": "Coordinador Investigación"
+                },
+                {
+                    "nombre": "Magister Mónica Mena",
+                    "cargo": "Directora del Departamento de Tecnología de la Información"
+                },
+                {
+                    "nombre": "Doctor C. Julio Zurita A.",
+                    "cargo": "Coordinador Oficina de Relaciones Internacionales y Cooperación Interinstitucional"
+                },
+                {
+                    "nombre": "P. Magister Juan Carlos Acosta",
+                    "cargo": "Director del Centro de Posgrados"
+                },
+                {
+                    "nombre": "Magister Diego Barragán",
+                    "cargo": "Coordinador de Marketing y Comunicación"
+                },
+                {
+                    "nombre": "P. Magister Luis Abad",
+                    "cargo": "Director Pastoral"
+                },
+                {
+                    "nombre": "Magister Santiago Fierro",
+                    "cargo": "Director Desarrollo Docente"
+                }
+            ]
+        },
+        "Campus de la PUCESA": [
+            {
+                "nombre": "Biblioteca",
+                "descripcion": "Nuestra biblioteca ofrece espacios para leer, estudiar y hacer trabajos de búsqueda de información individuales o grupales. Está equipada con mesas de lectura, computadoras de búsqueda, salas de trabajo y reuniones."
+            },
+            {
+                "nombre": "Aula Magna",
+                "descripcion": "El Aula Magna es un espacio diseñado para desarrollar diferentes actividades de índole cultural, laboral, festivo, académico, entre otros. Tiene una capacidad para 470 personas y se encuentra equipado con un sistema de audio y video. Es un espacio agradable para compartir en comunidad, por lo que se ofrece el servicio de alquiler al público en general."
+            },
+            {
+                "nombre": "Sala de Audiencias",
+                "descripcion": "Esta sala está compuesta con mesas para jueces y tribunal, estrado y equipos de computación y proyección para beneficio de los estudiantes y la comunidad."
+            },
+            {
+                "nombre": "Laboratorios de Informática",
+                "descripcion": "El Departamento de Informática de la PUCESA cuenta con siete laboratorios provistos de computadores y aplicaciones actualizadas acorde al mercado tecnológico actual tanto en plataformas Windows y OSX. Además, cuentan con acceso al servicio de internet alámbrico e inalámbrico para dispositivos móviles y proyectores, todo esto al servicio de estudiantes y docentes, lo cual facilita el proceso enseñanza-aprendizaje."
+            },
+            {
+                "nombre": "Sala Lúdica",
+                "descripcion": "La Sala lúdica es un ambiente de esparcimiento y encuentro para estudiantes y docentes. Dispone de sillones, televisión por cable, mesas, internet y juegos como futbolín y tenis de mesa. Área acogedora donde podrás llevar a cabo actividades de distracción o simplemente tomarte un momento para descansar."
+            },
+            {
+                "nombre": "Cancha de Fútbol",
+                "descripcion": "La cancha de fútbol es parte de las áreas verdes con las que cuenta la universidad. En ella se realizan actividades tanto académicas como deportivas que favorecen al desarrollo integral de estudiantes, docentes y administrativos."
+            },
+            {
+                "nombre": "Capilla",
+                "descripcion": "La capilla es el lugar simbólico de nuestra fe católica que ponemos al servicio de la ciudadanía Ambateña."
+            },
+            {
+                "nombre": "Coliseo",
+                "descripcion": "La PUCESA en su afán por incentivar la convivencia entre los miembros de su comunidad universitaria brinda un amplio espacio idóneo para actividades deportivas, culturales, sociales, entre otras. Sus instalaciones pueden recibir entre 800 y 1000 personas contando con baños modernos, camerinos con duchas, bar, sistema de audio e iluminación y guardianía. Su cancha de baloncesto posee medidas reglamentarias para efectuar partidos oficiales de alto rendimiento."
+            },
+            {
+                "nombre": "Consultorio Médico",
+                "descripcion": "El consultorio médico se creó para que la comunidad universitaria reciba asistencia médica oportuna y de calidad. Provisto del equipamiento necesario para llevar a cabo tareas médicas de primer nivel, el consultorio médico brinda atención para vigilar el bienestar personal y colectivo de sus estudiantes, docentes y administrativos."
+            },
+            {
+                "nombre": "Cafetería",
+                "descripcion": "La cafetería es parte importante de las instalaciones de la PUCESA. Cuenta con modernas mesas y sillas, televisión por cable y una excelente atención de su personal. Lugar acogedor donde podrás encontrar alimentos de calidad y un espacio para disipar tu mente."
+            },
+            {
+                "nombre": "Cámara de Gesell",
+                "descripcion": "La cámara Gesell es una habitación condicionada para permitir la observación con personas. Está conformada por dos ambientes separados por un vidrio de visión unilateral, los cuales cuentan con equipos de audio y de video para la grabación de los diferentes experimentos."
+            }
+        ],
+        "Director de la EI": {
+            "nombre": "Santiago Maldonado Acurio Alejandro",
+            "titulos": [
+                "Magíster en Gerencia Informática",
+                "Magíster en Docente y Currículo para la Educación Superior",
+                "Ingeniero en Sistemas"
+            ],
+            "LineaInvestigacion": "Hábitat, infraestructura y movilidad – Tecnologías de la información y la comunicación. Educación, comunicación, culturas, sociedad y valores.",
+            "nota": "Ademas de ser director tambien es docente"
+        },
+        "Docentes de la EI": [
+            {
+                "nombre": "Balseca Manzano José Marcelo",
+                "titulo": [
+                    "Magister en Gerencia Informática con Mención en Desarrollo de Software y Redes",
+                    "Diploma Superior en Tecnologías para la Gestión y Práctica Docente",
+                    "Diploma Superior en Gerencia Informática",
+                    "Ingeniero de Sistemas y Computación"
+                ],
+                "Línea de Investigación": "Hábitat, infraestructura y movilidad – Tecnologías de la información y la comunicación.",
+                "Correo electrónico": "jbalseca@pucesa.edu.ec"
+            },
+            {
+                "nombre": "Freire Aillón Teresa Milena",
+                "titulo": [
+                    "Magister en Gerencia Informática",
+                    "Magister en Docencia y Currículo para la Educación Superior",
+                    "Diploma Superior en Gerencia Informática",
+                    "Ingeniero en Sistemas"
+                ],
+                "Cargo": "Coordinador programa de Maestría de Ciberseguridad",
+                "Línea de Investigación": "Hábitat, infraestructura y movilidad – Tecnologías de la información y la comunicación.",
+                "Correo electrónico": "tfreire@pucesa.edu.ec"
+            },
+            {
+                "nombre": "Garcés Freire Enrique Xavier",
+                "titulo": [
+                    "Magister en Tecnología de la información y Multimedia Educativa",
+                    "Magister en Administración de Empresas Mención Planeación",
+                    "Diploma Superior en Gerencia Informática",
+                    "Ingeniero de Sistemas y Computación"
+                ],
+                "Línea de Investigación": "Hábitat, infraestructura y movilidad – Tecnologías de la información y la comunicación.",
+                "Correo electrónico": "egarces@pucesa.edu.ec"
+            },
+            {
+                "nombre": "López Sevilla Galo Mauricio",
+                "titulo": [
+                    "Magister en Informática",
+                    "Diploma Superior en Gerencia Informática",
+                    "Ingeniero en Sistemas"
+                ],
+                "Cargo": "Coordinador del Centro de Transferencia de Tecnología",
+                "Línea de Investigación": "Hábitat, infraestructura y movilidad – Tecnologías de la información y la comunicación.",
+                "Correo electrónico": "glopez@pucesa.edu.ec"
+            },
+            {
+                "nombre": "Mena Hernández Liliana del Rocio",
+                "titulo": [
+                    "Máster Universitario en Seguridad de las Tecnologías de la Información y de las Comunicaciones",
+                    "Magister en Ciencias de la Educación Mención en Gestión Educativa y Desarrollo Social",
+                    "Ingeniero en Sistemas"
+                ],
+                "Línea de Investigación": "Hábitat, infraestructura y movilidad – Tecnologías de la información y la comunicación.",
+                "Correo electrónico": "lmena@pucesa.edu.ec"
+            },
+            {
+                "nombre": "Klever Renato Urvina Barrionuevo",
+                "titulo": [],
+                "Línea de Investigación": "Hábitat, infraestructura y movilidad – Tecnologías de la información y la comunicación."
+            },
+            {
+                "nombre": "Pailiacho Mena Verónica Maribel",
+                "titulo": [
+                    "Magister en Ciberseguridad",
+                    "Magister en Gerencia Informática con Mención en Desarrollo de Software y Redes",
+                    "Diploma Superior en Docencia Universitaria",
+                    "Ingeniero de Sistemas y Computación"
+                ],
+                "Línea de Investigación": "Hábitat, infraestructura y movilidad – Tecnologías de la información y la comunicación.",
+                "Correo electrónico": "vpailiacho@pucesa.edu.ec"
+            },
+            {
+                "nombre": "Robayo Jácome Dario Javier",
+                "titulo": [
+                    "Magister en Gerencia Informática con Mención en Desarrollo de Software y Redes",
+                    "Diploma Superior en Gerencia Informática",
+                    "Ingeniero en Sistemas"
+                ],
+                "Cargo": "Coordinador Académico de la Escuela de Ingenierías",
+                "Línea de Investigación": "Hábitat, infraestructura y movilidad – Tecnologías de la información y la comunicación.",
+                "Correo electrónico": "drobayo@pucesa.edu.ec"
+            },
+            {
+                "nombre": "Medina Chicaiza Ricardo Patricio",
+                "titulo": [
+                    "Máster en Dirección Estratégica en Ingeniería de Software",
+                    "Máster Universitario en Marketing Digital y Comercio Electrónico",
+                    "Magister en Tecnología de la Información y Multimedia Educativa",
+                    "Diploma Superior en Gestión de Proyectos y Educación a Distancia",
+                    "Diploma Superior en Docencia con el Empleo de las Tecnologías de la Información y la Comunicación",
+                    "Diploma Superior en Liderazgo Institucional",
+                    "Diploma Superior en Gerencia Informática",
+                    "Licenciado en Ciencias de la Educación Mención Informática Educativa",
+                    "Ingeniero de Sistemas y Computación"
+                ],
+                "Línea de Investigación": "Hábitat, infraestructura y movilidad – Tecnologías de la información y la comunicación.",
+                "Correo electrónico": "pmedina@pucesa.edu.ec"
+            },
+            {
+                "nombre": "Zurita Llerena Paúl Hernán",
+                "titulo": [
+                    "Magister en Investigación Operativa Mención Gerencia",
+                    "Magister en Riesgo Financiero MSC",
+                    "Ingeniero Civil"
+                ],
+                "Línea de Investigación": "Hábitat, infraestructura y movilidad – Tecnologías de la información y la comunicación.",
+                "Correo electrónico": "pzurita@pucesa.edu.ec"
+            },
+            {
+                "nombre": "Urvina Barrionuevo Klever Renato",
+                "titulo": "",
+                "Línea de Investigación": "Hábitat, infraestructura y movilidad – Tecnologías de la información y la comunicación.",
+                "Correo electrónico": "krurvina@pucesa.edu.ec"
+            },
+            {
+                "nombre": "Acurio Maldonado Daniel Marcelo",
+                "titulo": [
+                    "Magister en Diseño de Productos",
+                    "Magister en Docencia y Currículo para la Educación Superior",
+                    "Ingeniero Mecánico"
+                ],
+                "Línea de Investigación": "Hábitat, infraestructura y movilidad – Tecnologías de la información y la comunicación - Diseño, infraestructura y sistemas sociales y ambientales para un hábitat sostenible",
+                "Correo electrónico": "dacurio@pucesa.edu.ec"
+            },
+            {
+                "nombre": "Amancha Proaño Pablo Israel",
+                "titulo": [
+                    "Máster en Diseño y Gestión de Proyectos Tecnológicos",
+                    "Magíster en Ingeniería de la Energía",
+                    "Ingeniero Mecánico"
+                ],
+                "Cargo": "Miembro del Comité de Investigación PUCESA",
+                "Línea de Investigación": "Hábitat, infraestructura y movilidad – Tecnologías de la información y la comunicación - Diseño, infraestructura y sistemas sociales y ambientales para un hábitat sostenible.",
+                "Correo electrónico": "pamancha@pucesa.edu.ec"
+            },
+            {
+                "nombre": "Bedón Vaca Concepción del Carmen",
+                "titulo": [
+                    "Magister en Diseño de Productos",
+                    "Magister en Tecnologías para la Gestión y Práctica Docente",
+                    "Arquitecta de Interiores"
+                ],
+                "Cargo": "Líder de ámbito de mejoramiento de las condiciones de hábitat y calidad de vida y desarrollo de comunidades urbanas marginales y rurales.",
+                "Línea de Investigación": "Identidades, educación, culturas, comunicación y valores - Artes, diseño, lenguajes, literatura y oralidad - Educación, comunicación, culturas, sociedad y valores",
+                "Correo electrónico": "cbedon@pucesa.edu.ec"
+            },
+            {
+                "nombre": "Echeverría Tamayo Francisco Javier",
+                "titulo": [
+                    "Máster Universitario en Ingeniería en Diseño Industrial UPM",
+                    "Ingeniero en Diseño Industrial",
+                    "Certificación Experto en Investigación Avanzada CEDIA"
+                ],
+                "Línea de Investigación": "Hábitat, infraestructura y movilidad – Tecnologías de la información y la comunicación - Diseño, infraestructura y sistemas sociales y ambientales para un hábitat sostenible.",
+                "Correo electrónico": "fecheverría@pucesa.edu.ec"
+            },
+            {
+                "nombre": "Flor Tapia Fernando Alfredo",
+                "titulo": [
+                    "Magister en Tecnologías para Gestión y Práctica docente",
+                    "Ingeniero en Diseño Industrial",
+                    "Certificación en Gestión Administrativa Número de Registro SETEC- MDT-4109-CCL-297060",
+                    "Certificación en Actividades para deportes de equipos Número de Registro SETEC - MDT-4109-CCL-297061",
+                    "Certificación en Prevención en Riesgos Laborales Número de Registro SETEC - SETEC-219-CCL-163421"
+                ],
+                "Línea de Investigación": "Forma y Materialidad - Diseño en perspectiva - Diseño y Economía",
+                "Correo electrónico": "fflor@pucesa.edu.ec"
+            },
+            {
+                "nombre": "Flores Carrillo Diana Gabriela",
+                "titulo": [
+                    "Magister en Marketing",
+                    "Ingeniera en Diseño de Modas"
+                ],
+                "Línea de Investigación": "Cruces entre cultura y diseño - Presente y futuro sobre el diseño latino",
+                "Correo electrónico": "dflores@pucesa.edu.ec"
+            },
+            {
+                "nombre": "Jiménez Sánchez Yesenia Yomara",
+                "titulo": [
+                    "Magister en Desarrollo Comunitario",
+                    "Diplomado Superior en Gerencia Estratégica de Mercadeo",
+                    "Diseñadora"
+                ],
+                "Cargo": "Docente a tiempo completo",
+                "Correo electrónico": "yjimenez@pucesa.edu.ec"
+            },
+            {
+                "nombre": "Núñez Escobar Gabriel Alejandro",
+                "titulo": [
+                    "Magister en Tecnologías para la Gestión y Práctica Docente",
+                    "Ingeniero en Diseño Industrial"
+                ],
+                "Línea de Investigación": "No se registra proyecto de investigación",
+                "Correo electrónico": "gnunez@pucesa.edu.ec"
+            },
+            {
+                "nombre": "Palacios Proaño Juan Carlos",
+                "titulo": [
+                    "Magister en Ciencias de la Educación",
+                    "Ingeniero en Diseño Industrial",
+                    "Ingeniero Industrial"
+                ],
+                "Línea de Investigación": "No se registra proyecto de investigación",
+                "Correo electrónico": "jpalacios@pucesa.edu.ec"
+            },
+            {
+                "nombre": "Quispe Morales Michele Paulina",
+                "titulo": [
+                    "Magister en Tecnologías para la Gestión y Práctica Docente",
+                    "Diploma Superior en Tecnologías para la Gestión y Práctica Docente",
+                    "Diseñadora"
+                ],
+                "Cargo": "Coordinadora Académica de la Carrera de Licenciatura de Productos",
+                "Línea de Investigación": "Identidades, educación, culturas, comunicación y valores - Artes, diseño, lenguajes, literatura y oralidad - Educación, comunicación, culturas, sociedad y valores",
+                "Correo electrónico": "mquispe@pucesa.edu.ec"
+            },
+            {
+                "nombre": "Santamaría Bedón Santiago Javier",
+                "titulo": [
+                    "Máster Universitario en Ingeniería en Diseño Industrial",
+                    "Ingeniero en Diseño Industrial"
+                ],
+                "Línea de Investigación": "Identidades, educación, culturas, comunicación y valores - Artes, diseño, lenguajes, literatura y oralidad - Educación, comunicación, culturas, sociedad y valores",
+                "Correo electrónico": "ssantamaria@pucesa.edu.ec"
+            },
+            {
+                "nombre": "Tirado Lozada Delia Angélica",
+                "titulo": [
+                    "Magister en Tecnologías para la Gestión y Práctica Docente",
+                    "Diploma Superior en Tecnologías para la Gestión y Práctica Docente",
+                    "Diseñadora"
+                ],
+                "Línea de Investigación": "No se registra proyecto de investigación",
+                "Correo electrónico": "atirado@pucesa.edu.ec"
+            },
+            {
+                "nombre": "Torres Almeida Miguel Augusto",
+                "titulo": [
+                    "Magister en Administración de Empresas Mención Planeación",
+                    "Magister en Docencia y Currículo para la Educación Superior",
+                    "Diploma Superior en Docencia Universitaria",
+                    "Ingeniero Industrial"
+                ],
+                "Cargo": "Director Académico PUCESA",
+                "Línea de Investigación": "No se registra proyecto de investigación",
+                "Correo electrónico": "mtorres@pucesa.edu.ec"
+            },
+            {
+                "nombre": "Barrera Erreyes Helder Marcell",
+                "titulo": [
+                    "Máster Universitario en Formación Internacional Especializada del Profesorado",
+                    "Especialidad Lengua y Literatura",
+                    "Magister en Docencia Universitaria y Administración Educativa",
+                    "Diploma Superior en Currículo por Competencias",
+                    "Licenciado en Ciencias de la Educación en la Especialidad de Educación Primaria",
+                    "Profesor de Educación Primaria - Nivel Técnico Superior"
+                ],
+                "Línea de Investigación": "No se registra proyecto de investigación",
+                "Correo electrónico": "hbarrera@pucesa.edu.ec"
+            },
+            {
+                "nombre": "Montalvo Jaramillo Pablo Ernesto",
+                "titulo": [
+                    "Magister en Sistemas de Control y Automatización Industrial",
+                    "Magister en Docencia Universitaria y Administración Educativa",
+                    "Diploma Superior en Tecnologías para la Gestión y Práctica Docente",
+                    "Ingeniero Industrial",
+                    "Ingeniero de Ejecución en Electromecánica",
+                    "Tecnólogo Mecánico"
+                ],
+                "Línea de Investigación": "No se registra proyecto de investigación",
+                "Correo electrónico": "pmontalvo@pucesa.edu.ec"
+            }
+        ],
+        "lugar de la EI": "Edificio Bloque 1 Primer Piso"
+    },
+    "Contactos": {
+        "telefono": "cero tres dos nueve nueve cuatro ocho cuatro cero",
+        "extensiones": [
+            {
+                "Nombre": "Prorrectorado",
+                "Contactos": [
+                    {
+                        "Prorrector": "PhD. Jorge Núñez",
+                        "Extensión": "tres dos cero uno"
+                    },
+                    {
+                        "Secretaria": "Licenciada Ana García",
+                        "Extensión": "tres dos cero dos"
+                    }
+                ]
+            },
+            {
+                "Nombre": "Dirección Académica",
+                "Contactos": [
+                    {
+                        "Director": "Magister Miguel Torres",
+                        "Extensión": "tres dos uno cuatro"
+                    },
+                    {
+                        "Secretaria": "Señora Amparo Reyes",
+                        "Extensión": "tres dos uno cinco"
+                    },
+                    {
+                        "Sub Director": "PhD. Christian Barragan",
+                        "Extensión": "tres dos uno ocho"
+                    }
+                ]
+            },
+            {
+                "Nombre": "Secretaría General",
+                "Contactos": [
+                    {
+                        "Secretario Procurador": "Doctor Hugo Altamirano",
+                        "Extensión": "tres uno cero nueve"
+                    },
+                    {
+                        "Secretarias": "Abogada Estefanía Constante",
+                        "Extensión": "tres uno uno cero"
+                    }
+                ]
+            },
+            {
+                "Nombre": "Dirección Administrativa de Talento Humano",
+                "Contactos": [
+                    {
+                        "Directora": "Economista Catalina Alvarez",
+                        "Extensión": "tres dos cero tres"
+                    },
+                    {
+                        "Asistente de Nómina": "Magister Sujail Pico",
+                        "Extensión": "tres dos cero cuatro"
+                    },
+                    {
+                        "Asistente Administrativa y de Talento Humano": "Ingeniera Marjorie Velastegui",
+                        "Extensión": "tres dos cero cinco"
+                    },
+                    {
+                        "Coordinador de Adquisiciones": "Ingeniero Fernando Hamann",
+                        "Extensión": "tres uno uno tres"
+                    },
+                    {
+                        "Técnica de Adquisiciones": "Magister Dayana Madrid",
+                        "Extensión": "tres dos cero siete"
+                    },
+                    {
+                        "Técnico de Seguridad y Salud Ocupacional": "Magister Héctor Cobo",
+                        "Extensión": "tres dos cero seis"
+                    }
+                ]
+            },
+            {
+                "Nombre": "Dirección Financiera",
+                "Contactos": [
+                    {
+                        "Director Financiero": "Ingeniero Emerson Pazmiño",
+                        "Extensión": "tres uno uno uno"
+                    },
+                    {
+                        "Contadora": "Licenciada Clara Villacrés",
+                        "Extensión": "tres uno uno dos"
+                    },
+                    {
+                        "Asistente Contable": "Señor Dustin Miranda",
+                        "Extensión": "tres uno uno siete"
+                    },
+                    {
+                        "Asistente de Contabilidad": "Tecnologa Nancy Medina",
+                        "Extensión": "tres uno uno cuatro"
+                    },
+                    {
+                        "Auxiliar 1": "Magister Erika Carvajal",
+                        "Extensión": "tres uno cero cuatro"
+                    }
+                ]
+            },
+            {
+                "Nombre": "Dirección de Estudiantes – Bienestar Estudiantil y Becas",
+                "Contactos": [
+                    {
+                        "Director": "Señor Francisco León",
+                        "Extensión": "tres uno cero uno"
+                    },
+                    {
+                        "Secretaria": "Señora Ana Vásquez",
+                        "Extensión": "tres uno cero dos"
+                    },
+                    {
+                        "Asistente": "Magister Damián Romero",
+                        "Extensión": "tres uno cero tres"
+                    },
+                    {
+                        "Asistente": "Ingeniero Joseph Toscano",
+                        "Extensión": "seis uno cero seis"
+                    }
+                ]
+            },
+            {
+                "Nombre": "Departamento de Pastoral Universitaria",
+                "Contactos": [
+                    {
+                        "Director": "P. Magister Luis Abad",
+                        "Extensión": "tres dos uno dos"
+                    },
+                    {
+                        "Asistente": "Magister Danilo Velasteguí",
+                        "Extensión": "tres dos uno tres"
+                    }
+                ]
+            },
+            {
+                "Nombre": "Centro de Posgrados",
+                "Contactos": [
+                    {
+                        "Director": "P. Doctor Juan Carlos Acosta",
+                        "Extensión": "uno uno cero uno"
+                    },
+                    {
+                        "Secretarias": "Magister Ana Cárdenas",
+                        "Extensión": "uno uno cero dos"
+                    }
+                ]
+            },
+            {
+                "Nombre": "Centro de Lenguas",
+                "Contactos": [
+                    {
+                        "Directora": "Magister Soledad Miranda",
+                        "Extensión": "dos uno cero uno"
+                    },
+                    {
+                        "Secretarias": "Licenciada Doris Rosales",
+                        "Extensión": "dos uno cero dos"
+                    },
+                    {
+                        "Secretarias": "Magister Evelyn Arroba",
+                        "Extensión": "dos uno cero tres"
+                    }
+                ]
+            },
+            {
+                "Nombre": "Coordinación de Desarrollo Docente y Docencia",
+                "Contactos": [
+                    {
+                        "Coordinador": "Magister Santiago Fierro",
+                        "Extensión": "tres dos cero nueve"
+                    },
+                    {
+                        "Asistente": "Abogada Andrea Auz",
+                        "Extensión": "tres dos uno cero"
+                    }
+                ]
+            },
+            {
+                "Nombre": "Coordinación de Investigación",
+                "Contactos": [
+                    {
+                        "Coordinador": "PhD. Osmany Pérez",
+                        "Extensión": "dos cero cero uno"
+                    },
+                    {
+                        "Secretaria": "Magister Olga López",
+                        "Extensión": "dos cero cero dos"
+                    },
+                    {
+                        "Cargo": "Oficina de Publicaciones Cientificas",
+                        "Extensión": "dos cero cero tres"
+                    },
+                    {
+                        "Cargo": "Líderes de Ambitos de Investigación",
+                        "Extensión": "dos cero cero cuatro"
+                    }
+                ]
+            },
+            {
+                "Nombre": "Coordinación de Vinculación",
+                "Contactos": [
+                    {
+                        "Coordinador": "Magister Juan Carlos Manjarres",
+                        "Extensión": "3107"
+                    },
+                    {
+                        "Analista de Educación Continua": "Magister Juan Aguilar",
+                        "Extensión": "3108"
+                    }
+                ]
+            },
+            {
+                "Nombre": "Internacionalización y Relaciones Internacionales",
+                "Contactos": [
+                    {
+                        "Coordinador": "Doctor Julio Zurita",
+                        "Extensión": "3208"
+                    }
+                ]
+            },
+            {
+                "Nombre": "Departamento de Tecnologías de la Información",
+                "Contactos": [
+                    {
+                        "Directora": "Magister Mónica Mena",
+                        "Extensión": "1403"
+                    },
+                    {
+                        "Especialista en Aplicaciones y Desarrollo": "Magister José Enríquez",
+                        "Extensión": "1404"
+                    },
+                    {
+                        "Especialista en Comunicaciones e Infraestructur": "Magister Eduardo Remache",
+                        "Extensión": "1405"
+                    },
+                    {
+                        "Técnico en Infraestructura": "Tecnologo Marlon Castro",
+                        "Extensión": "1408"
+                    },
+                    {
+                        "Técnico de Base de Datos": "Ingeniera Pamela Mendez",
+                        "Extensión": "1410"
+                    },
+                    {
+                        "Técnico de Base de Datos": "Ingeniera Anita Lagua",
+                        "Extensión": "1411"
+                    }
+                ]
+            },
+            {
+                "Nombre": "Departamento de Comunicación y Marketing",
+                "Contactos": [
+                    {
+                        "Coordinador": "Magister Diego Barragán",
+                        "Extensión": "tres uno cero cinco"
+                    },
+                    {
+                        "Secretaria Call Center - Almacen Universitario ": "Psicologa. Maria Gracia Mayorga",
+                        "Extensión": "tres dos uno seis"
+                    },
+                    {
+                        "Community Manager": "Magister Daniela Mera",
+                        "Extensión": "tres uno cero seis"
+                    },
+                    {
+                        "Community Manager": "Ingeniero Cristhian Cobo",
+                        "Extensión": "tres uno cero seis"
+                    },
+                    {
+                        "Promotor de Ventas": "Ingeniero Edison López",
+                        "Extensión": "tres uno cero seis"
+                    },
+                    {
+                        "Supervisor de Promoción Externa": "Ingeniero Andrés Granda",
+                        "Extensión": "tres uno uno cinco"
+                    }
+                ]
+            },
+            {
+                "Nombre": "Oficina de Aseguramiento de la Calidad, Acreditación",
+                "Contactos": [
+                    {
+                        "Director": "Magister Ricardo Núñez",
+                        "Extensión": "uno cuatro cero uno"
+                    },
+                    {
+                        "Técnica de Aseguramiento Calidad": "Magister Alexandra Naranjo",
+                        "Extensión": "uno cuatro cero dos"
+                    }
+                ]
+            },
+            {
+                "Nombre": "Escuela de Administración de Empresas",
+                "Contactos": [
+                    {
+                        "Directora": "MBA. Viviana Avellan",
+                        "Extensión": "dos cuatro cero uno"
+                    },
+                    {
+                        "Secretaria": "Licenciada Rocio Reino",
+                        "Extensión": "dos cuatro cero dos"
+                    },
+                    {
+                        "Coordinador Administración de Empresas Semipresencial - Coordinador Contabilidad y Auditoria Semipresencial": "Magister Alejandra Cuesta",
+                        "Extensión": "uno cuatro uno dos"
+                    },
+                    {
+                        "Coordinador Negocios Internacionales": "Ingeniero Jairo Villena",
+                        "Extensión": "uno cuatro uno cuatro"
+                    }
+                ]
+            },
+            {
+                "Nombre": "Escuela de Ciencias de la Salud",
+                "Contactos": [
+                    {
+                        "Jairo Villena": "Doctora Estefania Pinzon",
+                        "Extensión": "dos tres cero dos"
+                    },
+                    {
+                        "Coordinadora Carrera de Enfermería": "Licenciada Carmita Lascano",
+                        "Extensión": "dos tres cero dos"
+                    },
+                    {
+                        "Secretarias": "Ingeniera Karina Altamirano",
+                        "Extensión": "dos tres cero tres"
+                    },
+                    {
+                        "Secretarias": "Tec. Karina Peralta",
+                        "Extensión": "dos tres cero tres"
+                    },
+                    {
+                        "Laboratorio 1": "Licenciado Marco Jimenez",
+                        "Extensión": "tres cero cero uno"
+                    },
+                    {
+                        "Laboratorio 2": "Licenciada Pamela Bustos",
+                        "Extensión": "seis uno dos cero"
+                    }
+                ]
+            },
+            {
+                "Nombre": "Escuela de Jurisprudencia",
+                "Contactos": [
+                    {
+                        "Director": "Abogado Santiago Morales",
+                        "Extensión": "dos dos cero uno"
+                    },
+                    {
+                        "Secretaria": "Ingeniera Mery Garzón",
+                        "Extensión": "dos dos cero dos"
+                    }
+                ]
+            },
+            {
+                "Nombre": "Escuela de Psicología",
+                "Contactos": [
+                    {
+                        "Directora": "PhD. Varna Hernández",
+                        "Extensión": "uno tres cero uno"
+                    },
+                    {
+                        "Secretaria": "Ingeniera Patricia Analuisa",
+                        "Extensión": "uno tres cero dos"
+                    }
+                ]
+            },
+            {
+                "Nombre": "Escuela de Ingeniería",
+                "Contactos": [
+                    {
+                        "Director": "Magister Santiago Acurio",
+                        "Correo": "sacurio@pucesa.edu.ec",
+                        "Extensión": "uno uno cero tres"
+                    },
+                    {
+                        "Secretaria": "Licenciada Myriam Mayorga",
+                        "Correo": "mmayorga@pucesa.edu.ec",
+                        "Extensión": "uno uno cero cuatro"
+                    },
+                    {
+                        "Auxiliar de Taller": "Señor Marcelo Dávila",
+                        "Extensión": "cuatro uno cero tres"
+                    }
+                ]
+            },
+            {
+                "Nombre": "Oficial de Seguridad de la Información",
+                "Contactos": [
+                    {
+                        "Oficial de Seguridad de la Información": "Ingeniero Jorge Córdova",
+                        "Extensión": "tres uno uno siete"
+                    },
+                    {
+                        "Asistente de Servicios Técnicos": "Tecnologo Milton Jerez",
+                        "Extensión": "tres uno uno siete"
+                    }
+                ]
+            },
+            {
+                "Nombre": "PUCETEC",
+                "Contactos": [
+                    {
+                        "Coordinador General": "Magister Daniel Acurio",
+                        "Extensión": "cuatro dos cero uno"
+                    },
+                    {
+                        "Coordinadora de la Tecnología Superior en Enfermería ": "Licenciada Valeria Vásconez",
+                        "Extensión": "cuatro dos cero dos"
+                    },
+                    {
+                        "Secretaria": "Licenciada Myriam Mayorga",
+                        "Extensión": "cuatro dos cero dos"
+                    }
+                ]
+            },
+            {
+                "Nombre": "Biblioteca",
+                "Contactos": [
+                    {
+                        "Jefa": "Ingeniera Lorena Ibarra",
+                        "Extensión": "cuatro uno cero uno"
+                    },
+                    {
+                        "Secretarios": "Abogado Eduardo Vargas",
+                        "Extensión": "cuatro uno cero uno"
+                    },
+                    {
+                        "Secretarios": "Señora Roberta Baños",
+                        "Extensión": "cuatro uno cero uno"
+                    }
+                ]
+            },
+            {
+                "Nombre": "Oficina Embajada EEUU",
+                "Contactos": [
+                    {
+                        "Técnico de Información": "Magister Gabriela Naranjo",
+                        "Extensión": "cuatro uno cero dos"
+                    }
+                ]
+            },
+            {
+                "Nombre": "Centro de Prácticas y Servicios",
+                "Contactos": [
+                    {
+                        "Coordinadora CPA (Centro de Psicología Aplicada) ": "Magister Dayami Lima",
+                        "Extensión": "cinco uno cero tres"
+                    },
+                    {
+                        "Secretaria CPA": "Psicologa Olga López",
+                        "Extensión": "cinco uno cero cuatro"
+                    },
+                    {
+                        "Coordinador Consultorios Jurídicos": "Doctor Luis Fernando Suárez",
+                        "Extensión": "uno cero cero uno"
+                    },
+                    {
+                        "Secretaria Consultorios Jurídicos": "Abogada Gabriela Jaramillo",
+                        "Extensión": "uno cero cero dos"
+                    },
+                    {
+                        "Abogados Consultorios Jurídicos": "Abogado Juan Manuel Moscoso",
+                        "Extensión": "uno cero cero dos"
+                    },
+                    {
+                        "Abogados Consultorios Jurídicos": "Abogado Brigitte Torres",
+                        "Extensión": "uno cero cero dos"
+                    },
+                    {
+                        "Abogados Consultorios Jurídicos": "Abogado Vanessa Yánez",
+                        "Extensión": "uno cero cero dos"
+                    }
+                ]
+            },
+            {
+                "Nombre": "Servicio Médico y Odontológico",
+                "Contactos": [
+                    {
+                        "Consultorio Médico": "Doctor Víctor Uribe",
+                        "Extensión": "cinco uno cero uno"
+                    },
+                    {
+                        "Consultorio Odontológico": "Odontologa Maria Grazzia Balarezo",
+                        "Extensión": "cinco uno cero dos"
+                    }
+                ]
+            },
+            {
+                "Nombre": "Salas de Profesores Tiempo Completo",
+                "Contactos": [
+                    {
+                        "Sala Docentes 5": "Sala Docentes",
+                        "Extensión": "seis uno siete uno"
+                    },
+                    {
+                        "Sala Docentes 6": "Sala Docentes",
+                        "Extensión": "seis uno siete dos"
+                    },
+                    {
+                        "Sala Docentes Coordinadores Maestrias": "Sala Docentes",
+                        "Extensión": "seis uno uno uno"
+                    }
+                ]
+            },
+            {
+                "Nombre": "Garitas",
+                "Contactos": [
+                    {
+                        "Garita 1": "Peatonal",
+                        "Extensión": "seis uno cero dos"
+                    },
+                    {
+                        "Garita 2": "Coliseo",
+                        "Extensión": "seis uno cero cinco"
+                    }
+                ]
+            },
+            {
+                "Nombre": "Cafetería",
+                "Contactos": [
+                    {
+                        "Cargo": "Cafetería",
+                        "Extensión": "seis uno cero cuatro"
+                    }
+                ]
+            },
+            {
+                "Nombre": "Parqueaderos",
+                "Contactos": [
+                    {
+                        "Cargo": "Coliseo",
+                        "Extensión": "seis uno cero uno"
+                    },
+                    {
+                        "Cargo": "Edificio Ciencias de la Salud",
+                        "Extensión": "seis uno cero siete"
+                    }
+                ]
+            }
+        ]
+    },
+    "carreras de la Escuela de Ingenierias": [
+        {
+            "carrera": "Sistemas de Información",
+            "duración": "8 Semestres",
+            "modalidad": "Presencial",
+            "precio": "$2500",
+            "Perfil Profecional": [
+                "Desarrolla sistemas informáticos que ayudan a automatizar los procesos que manejan grandes volúmenes de datos y muestra indicadores de gestión que brindan soporte en la toma de decisiones, solventa el deficiente, uso de las Tecnologías de la Información y de la Comunicación (TIC) en la sociedad.",
+                "Realiza reingeniería de procesos de modo que sean más eficientes y se puedan automatizar con sistemas integrados de gestión empresarial, además implementa sistemas que permitan hacer un seguimiento al flujo del proceso.",
+                "Impulsa proyectos de investigación de acuerdo con los requerimientos con capacidades técnicas y de gestión, para dinamizar la transformación productiva.",
+                "Adquiere habilidades estratégicas de alta gerencia que le impulsa a emprender proyectos innovadores y enfocados a la creación de sus propias empresas tecnológicas."
+            ],
+            "Campo Laboral": [
+                "Desarrollador de Sistemas de Información",
+                "Consultor de Sistemas de Información",
+                "Consultor Data Warehouse y Data Mining",
+                "Diseñador y administrador de Bases de Datos",
+                "Investigador y profesor",
+                "Emprendedor"
+            ],
+            "Porque Estudiar": "Las carreras de ingenierías en las ciencias informáticas son las de mayor empleabilidad y remuneración en el mundo. Los ingenieros en sistemas de información de la PUCE Ambato, experimentaran en su proceso formativo una malla curricular moderna y actualizada, que responde a la realidad actual de las necesidades de procesamiento de información del medio. Los constantes cambios que se evidencian en la transformación digital de la sociedad demandan de profesionales capaces de diseñar, mantener y tratar información. En este orden, la formación académica de la PUCE Ambato soporta la formación profesional en las ciencias de datos y la formación humana que caracteriza a las organizaciones que forman parte de la Compañía de Jesus. La experiencia profesional del cuerpo docente, con más de 20 años de formación en el área informática; y, las generaciones de graduados de la Escuela de Ingeniería que se desempeñan en el área empresarial de las soluciones informáticas avalan el prestigio bien ganado de la Escuela de Sistemas de la PUCE Ambato."
+        },
+        {
+            "carrera": "Diseño Industrial",
+            "duración": "8 Semestres",
+            "modalidad": "Presencial",
+            "precio": "$2500",
+            "Perfil Profecional": [
+                "Creativo para usar de forma eficiente e innovadora todos los recursos teóricos,conceptuales, metodológicos y técnicos, con el propósito de crear propuestas de diseños y servicios, con un alto valor en el mercado ecuatoriano.",
+                "Elabora todas las especificaciones técnicas, para la correcta fabricación y montaje de cada uno de los componentes que conforman el producto.",
+                "Capacidad de trabajar en ambientes multidisciplinarios y cooperativos, hacia la organización y dirección de proyectos para promover mejoras cualitativas en la actividad empresarial o de emprendimiento, de los sectores económico – productivos.",
+                "Establecer estrategias de investigación e innovación, aplicadas en el diseño de productos y procesos, con el fin incrementar la productividad, agregar valor, innovar y atender las prioridades del sector productivo de la Zona 3 Centro del país, fomentando una cultura de emprendimiento y convivencia social.",
+                "Capacidad creativa para la negociación y el cambio de la matriz productiva, con actitudes encaminadas al fomento de la producción nacional con responsabilidad social, cultural y medio ambiental.",
+                "Promover el rescate de conocimientos ancestrales, cosmovisiones y dinámicas culturales, para garantizar proyectos de co-creación que promuevan los sistemas de producción y consumo."
+            ],
+            "Campo Laboral": [
+                "Industria automotriz (carrocerías y autopartes).",
+                "Industria de transformación metálica y plástica.",
+                "Industrias de la madera y sus productos.",
+                "Industrias del papel y sus productos.",
+                "Industria textil, cuero y calzado.",
+                "Industrias de envase, empaque y almacenamiento.",
+                "Departamentos de I+D+i de grandes empresas."
+            ],
+            "Porque Estudiar": "Un ingeniero en diseño industrial proyecta el diseño de productos de todo tipo, para satisfacer las necesidades de la sociedad y mejorar la forma, el uso y la función de los productos industriales. EL trabajo de este profesional está en estrecha relación con la industrial y producción. Se desarrolla profesionalmente en proyectos que requieren potenciar la creatividad para solucionar problemas reales de la sociedad integrando innovación en los procesos productivos."
+        },
+        {
+            "carrera": "Ingeniería Civil",
+            "duración": "9 Semestres",
+            "modalidad": "Presencial",
+            "precio": "$2500",
+            "Perfil Profecional": [
+                "Planificar, diseñar, construir y administrar proyectos de ingeniería civil en especialidades como: vial, estructural y sanitaria.",
+                "Desarrollar emprendimientos con visión empresarial y responsabilidad social, con liderazgo basado en principios de honestidad, integridad, solidaridad y equidad.",
+                "Crear y diseñar proyectos de Ingeniería civil que disminuyan la afectación a los recursos naturales.",
+                "Estar preparado/a para participar con alta capacidad técnica en proyectos que requieran de la conformación de grupos multidisciplinarios"
+            ],
+            "Objetivo General": "Formar profesionales capaces de analizar, diseñar, gestionar, planificar, ejecutar y evaluar proyectos de construcciones urbanas y rurales, infraestructura vial e infraestructura sanitaria, mediante la comprensión del funcionamiento y la lógica estructural de los proyectos de obras civiles, estipulado en las normas de construcción, cuyas propuestas permitan mejorar la calidad integral de los mismos, su confiabilidad operativa, así como el manejo eficiente de los recursos, materiales y equipos, contribuyendo al cuidado y protección del medio ambiente."
+        }
+    ],
+    "carreras de la Escuela de Jurisprudencia": [
+        {
+            "carrera": "Derecho"
+        }
+    ],
+    "carreras de la Escuela de Administración de Empresas": [
+        {
+            "carrera": "Contabilidad y auditoría"
+        },
+        {
+            "carrera": "Administración de empresas"
+        },
+        {
+            "carrera": "Negocios internacionales"
+        }
+    ],
+    "carreras de la Escuela de Ciancias de la Salud": [
+        {
+            "carrera": "Medicina"
+        },
+        {
+            "carrera": "Enfermería"
+        }
+    ],
+    "carreras de la Escuela de Psicología": [
+        {
+            "carrera": "Psicología"
+        },
+        {
+            "carrera": "Psicología clinica"
+        }
+    ],
+    "Oferta PUCETEC (Programa de Tecnologados de la PUCESA)": [
+        {
+            "carrera": "Enfermería"
+        },
+        {
+            "carrera": "Gestión culinaria"
+        },
+        {
+            "carrera": "Construcción"
+        }
+    ]
+}
