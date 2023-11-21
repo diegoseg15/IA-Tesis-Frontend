@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /.pnp
+/src/knowledge.json
 .pnp.js
 .mp3
 
@@ -24,4 +25,3 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-knowledge.json*
