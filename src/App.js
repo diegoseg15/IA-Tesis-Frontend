@@ -1,13 +1,14 @@
 import React from "react";
 import "./App.css";
-import { Header } from "./Components/Header";
-import { Chat } from "./Components/Chat";
+import { ClientLayouts } from "./Layouts/ClientLayout.jsx";
+import {Chat} from "../src/Components/Chat"
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Chat />
+    <div id="app" className="overflow-hidden w-screen">
+      <ClientLayouts>
+        <Chat />
+      </ClientLayouts>
     </div>
   );
 }

@@ -10,7 +10,7 @@ El archivo principal que define la estructura de la aplicación. Importa el comp
 
 ### `src/Components/Header.js`
 
-El componente `Header` muestra la cabecera de la aplicación, que incluye el logo de DORIS.
+El componente `Header` muestra la cabecera de la aplicación, que incluye el logo de la PUCESA.
 
 ### `src/Components/Messages.js`
 
@@ -28,11 +28,13 @@ Funciones para interactuar con la API de OpenAI para transcripciones y reproducc
 
 El componente principal `Chat` gestiona la interfaz del chat, incluyendo la entrada de mensajes, la visualización de mensajes y la reproducción de audio.
 
-## Funcionalidades Destacadas
+## Funcionalidades provenientes del API REST
 
 - **Transcripción de Audio:** Permite al usuario enviar mensajes de audio que son transcritos y procesados por el asistente.
 - **Generación de Respuestas:** Utiliza la API de GPT para generar respuestas inteligentes a los mensajes del usuario.
 - **Interacción por Chat:** Facilita la comunicación entre el usuario y el asistente a través de mensajes de texto y audio.
+
+**Nota:** Se recomienda ver el repositorio IA-Tesis-Backend
 
 ## Uso de Grabación de Audio
 
@@ -40,7 +42,7 @@ El componente `Chat` permite a los usuarios grabar mensajes de audio. Al hacer c
 
 ## Conocimientos Predeterminados
 
-DORIS cuenta con conocimientos predeterminados sobre la Escuela de Ingenierías de la PUCESA. Estos conocimientos se encuentran en el archivo `knowledge.json` y se utilizan para mejorar las respuestas generadas por el modelo GPT.
+DORIS cuenta con conocimientos predeterminados sobre la Escuela de Ingenierías de la PUCESA. Estos conocimientos se encuentran en el archivo `knowledge.json` y se utilizan para mejorar las respuestas generadas por el modelo GPT. (Este archivo no se sube al repositorio por temas de seguridad)
 
 ## Cómo Iniciar la Aplicación
 
@@ -54,6 +56,3 @@ La aplicación estará disponible en [http://localhost:3000](http://localhost:30
 
 El chat comienza con un mensaje de sistema que proporciona información sobre DORIS y sus capacidades. Este mensaje se encuentra en `defaultMessage` en `Chat.js`.
 
----
-
-**Nota:** El código proporcionado aquí es solo una porción del proyecto completo y está destinado a ser usado como referencia para la estructura y funcionalidad del sistema de chat.

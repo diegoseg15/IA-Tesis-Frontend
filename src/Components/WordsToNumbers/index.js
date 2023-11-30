@@ -1,0 +1,1 @@
+export { palabraANumero } from './WordsToNumbers.js'

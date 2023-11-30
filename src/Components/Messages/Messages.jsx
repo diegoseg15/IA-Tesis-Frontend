@@ -1,8 +1,34 @@
 import React from "react";
-
+import { wordsToNumbers } from "../WordsToNumbers/WordsToNumbers";
 
 export function Messages(props) {
   const { message, rol, index } = props;
+  // Utilizar una expresión regular para encontrar todas las instancias de ```...```
+  const regex = /```([^`]+)```/g;
+  let match;
+  let lastIndex = 0;
+  const highlightedParts = [];
+
+  // Buscar todas las instancias de ```...```
+  while ((match = regex.exec(message)) !== null) {
+    const startIndex = match.index;
+    const endIndex = regex.lastIndex;
+
+    // Agregar el texto antes de ``` y después de ```
+    highlightedParts.push(message.substring(lastIndex, startIndex));
+
+    // Agregar el texto entre ``` con estilo de resaltado
+    highlightedParts.push(
+      <span key={startIndex} className="bg-black text-white p-2">
+        {match[1]}
+      </span>
+    );
+
+    lastIndex = endIndex;
+  }
+
+  // Agregar el texto restante después de la última instancia de ```
+  highlightedParts.push(message.substring(lastIndex));
 
   return (
     <>
@@ -13,7 +39,7 @@ export function Messages(props) {
         >
           <div className="text-sm font-bold">DORIS</div>
           <div className="bg-gray-200 rounded-lg px-4 py-2">
-            <p className="text-sm whitespace-pre-line">{message}</p>
+            <p className="text-sm whitespace-pre-line">{highlightedParts}</p>
             <p className="text-xs text-zinc-500">10:15 AM</p>
           </div>
         </div>
@@ -31,7 +57,6 @@ export function Messages(props) {
       ) : (
         rol !== "system" && <>{message}</>
       )}
-      
     </>
   );
 }

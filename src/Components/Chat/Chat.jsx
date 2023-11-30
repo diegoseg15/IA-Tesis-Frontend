@@ -1,22 +1,26 @@
 import React, { useEffect, useRef, useState } from "react";
-import { gptAPI } from "../../API/gptOpenAI";
+import { gptAPI } from "../../API/gptOpenAI.js";
 import {
   whisperSpeech,
   whisperTranscriptionAPI,
-} from "../../API/whisperOpenAI";
+} from "../../API/whisperOpenAI.js";
 import { Messages } from "../Messages";
-import jsonData from "../../../src/Data/knowledge.json";
+import jsonData from "../../Data/knowledge.json";
 import MicRecorder from "mic-recorder-to-mp3";
 import Lottie from "lottie-react";
 import messageTypingJSON from "../../assets/jsonanimation/Animation-1700522939005.json";
+import { NumbersToWords } from "../WordsToNumbers/WordsToNumbers.js";
+import { motorBoca } from "../../API/motores.js";
 
 export function Chat() {
+  const audioRef = useRef(null);
   const [audioSpeech, setAudioSpeech] = useState("");
   const [messageUser, setMessageUser] = useState("");
   const [isPlay, setIsPlay] = useState(false);
   const [messageLoad, setMessageLoad] = useState(false);
   const [messageData, setMessageData] = useState(defaultMessage);
   const messageEndRef = useRef(null);
+  const [duracion, setDuracion] = useState(3);
   // const audioPlayer = document.getElementById("audioPlayer");
 
   useEffect(() => {
@@ -27,7 +31,7 @@ export function Chat() {
   let recordTimeout;
   let Mp3Recorder;
 
-  const MAX_RECORDING_TIME = 15000; // 15 segundos en milisegundos
+  const MAX_RECORDING_TIME = 25000; // 15 segundos en milisegundos
 
   const startRecording = () => {
     Mp3Recorder = new MicRecorder({ bitRate: 128 });
@@ -122,6 +126,8 @@ export function Chat() {
                 .catch((err) => {
                   console.log(err);
                 });
+            } else {
+              console.log(transcription.error);
             }
           } else {
             setMessageLoad(false);
@@ -144,7 +150,6 @@ export function Chat() {
       setMessageLoad(true);
       gptAPI([...messageData, userMessageUser])
         .then(async (response) => {
-          // console.log(messageData);
           setMessageUser("");
           setMessageLoad(false);
           const userMessageAssistant = {
@@ -156,6 +161,7 @@ export function Chat() {
             userMessageUser,
             userMessageAssistant,
           ]);
+          console.log(response);
           const audioResponse = await whisperSpeech({ message: response.text });
           setAudioSpeech(audioResponse.base64Data);
           playAudio();
@@ -169,20 +175,52 @@ export function Chat() {
       console.log("No se escribió el mensaje");
     }
   };
+
+  const obtenerDuracion = async () => {
+    try {
+      // Wait until the audio is loaded
+      await new Promise((resolve) => {
+        if (audioRef.current && audioRef.current.readyState >= 2) {
+          resolve();
+        } else {
+          audioRef.current.addEventListener("loadeddata", resolve);
+        }
+      });
+
+      // Now you can safely access the duration
+      const duracionAudio = audioRef.current.duration;
+      setDuracion(duracionAudio);
+      eventPlay(); // Call eventPlay after updating the duration
+    } catch (error) {
+      console.error("Error while obtaining audio duration:", error);
+    }
+  };
+
+  const eventPlay = () => {
+    const lastMessage = messageData[messageData.length - 1];
+
+    console.log((audioRef.current.duration * 1000).toFixed());
+
+    if (lastMessage && lastMessage.content) {
+      motorBoca({
+        texto: lastMessage.content,
+        duracionAudio: (duracion * 1000).toFixed(),
+      })
+        .then((response) => {
+          console.log(response);
+        })
+        .catch((error) => {
+          console.error("Error al procesar el texto:", error);
+        });
+    } else {
+      console.warn("No hay mensaje válido para reproducir");
+    }
+  };
+
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden w-screen h-screen md:py-36 pt-44 pb-32">
       <div
-        className="bg-gray-800 text-white py-2 px-4 flex flex-col items-center space-y-2"
-        id="chat-description"
-      >
-        <h1 className="text-xl font-bold">Asistente Robot DORIS</h1>
-        <p className="text-sm">
-          Asistente robot de voz especializado en brindar información sobre la
-          Escuela de Ingenierías de la PUCESA.
-        </p>
-      </div>
-      <div
-        className="flex-1 overflow-y-auto p-4 space-y-4 mx-8 h-96"
+        className="flex-1 h-full py-4 space-y-4 px-10 overflow-y-auto"
         id="chat-box"
       >
         {messageData.length > 0 ? (
@@ -218,9 +256,10 @@ export function Chat() {
         )}
         <div ref={messageEndRef} />
       </div>
-      <div className="absolute bottom-0 w-full">
+      <div className="absolute bottom-0 w-full bg-[#f1f3f4]">
         <audio
-          className="w-full h-20"
+          onPlay={obtenerDuracion}
+          className="w-full md:px-7 px-0"
           id="audioPlayer"
           src={`data:audio/mp3;base64,${audioSpeech}`}
           onPause={(event) => {
@@ -229,13 +268,20 @@ export function Chat() {
           }}
           autoPlay={isPlay}
           controls
+          ref={audioRef} // Add this line to connect the ref
         ></audio>
+        {duracion > 0 && (
+          <div className="text-center p-2 text-gray-500">
+            Duración total: {duracion} segundos
+          </div>
+        )}
         <div
-          className="border-t flex items-center space-x-4 p-4"
+          className="border-t flex items-center sm:space-x-4 space-x-0.5 py-4 md:px-10 sm:px-3 px-2 bg-gray-100"
           id="message-input"
         >
           <input
-            className="flex-1 h-14 rounded-lg border border-gray-400 px-5"
+            className="flex-1 md:h-14 h-10 rounded-lg border border-gray-400 sm:px-5 px-0.5"
+            ref={messageEndRef}
             id="message-text"
             placeholder="Escribe un mensaje"
             type="text"
@@ -245,22 +291,20 @@ export function Chat() {
             }}
           />
           <button
-            className="rounded-lg bg-[#00c0e0] disabled:bg-[#B0E0E6] text-white py-3 px-5 flex items-center justify-center space-x-1"
+            className="rounded-lg bg-[#00c0e0] disabled:bg-[#B0E0E6] text-white md:py-3 md:px-5 p-2 flex items-center justify-center md:space-x-1"
             id="send-button"
             onClick={(event) => handleSubmit(event)}
             disabled={messageLoad}
           >
-            <span className="pr-3">Enviar</span>
+            <span className="pr-3 md:block hidden">Enviar</span>
             <svg
-              className=""
+              className="h-6 w-6"
               fill="none"
-              height="24"
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
               viewBox="0 0 24 24"
-              width="24"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path d="m22 2-7 20-4-9-9-4Z" />
@@ -268,21 +312,19 @@ export function Chat() {
             </svg>
           </button>
           <button
-            className="rounded-lg bg-[#00c0e0] py-3 px-5 disabled:bg-[#B0E0E6]"
+            className="rounded-lg bg-[#00c0e0] md:py-3 md:px-5 p-2 disabled:bg-[#B0E0E6]"
             id="mic-button"
             onClick={(event) => handleSubmitRecord(event)}
             disabled={messageLoad}
           >
             <svg
-              className="h-7 text-white"
+              className="h-6 w-6 text-white"
               fill="none"
-              height="24"
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
               viewBox="0 0 24 24"
-              width="24"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
@@ -303,7 +345,7 @@ const messageSystem = `Eres 'DORIS', el asistente robótico de voz diseñado esp
 const defaultMessage = [
   {
     role: "system",
-    content: messageSystem,
+    content: messageSystem.trim(),
   },
   {
     role: "assistant",
