@@ -1151,6 +1151,35 @@
                     "resumen": "Más de 500 empleados de la 'startup' de IA han firmado una carta en la que exigen la dimisión de su junta directiva por haber despedido a su cofundador y consejero delegado, Sam Altman"
                 }
             ]
+        },
+        "futbol": {
+            "noticias": [
+                {
+                    "titulo": "Ecuador 2 - 0 Perú: Un nuevo éxito para la selección ecuatoriana",
+                    "resumen": "Ecuador logró derrotar a Perú en un partido amistoso, mostrando un buen desempeño en el segundo tiempo. La selección ecuatoriana sigue con una gran forma y busca continuar así para el futuro.",
+                    "fecha": "2023-11-27"
+                },
+                {
+                    "titulo": "Ecuador 4 - 2 Bolivia: Un contundente empate para Ecuador",
+                    "resumen": "Ecuador tuvo un buen desempeño en el partido contra Bolivia, mostrando una solida defensa y un ataque efectivo. El empate 4-2 fue un resultado justo.",
+                    "fecha": "2023-11-15"
+                },
+                {
+                    "titulo": "Ecuador 1 - 0 Colombia: Una sorpresa en el estadio Rodrigo Paz Delgado",
+                    "resumen": "Ecuador derrotó a Colombia en un partido amistoso, con un gol de último minuto. La victoria fue una sorpresa para todos los aficionados.",
+                    "fecha": "2023-11-12"
+                },
+                {
+                    "titulo": "Ecuador 2 - 1 Paraguay: Un desafío para la selección ecuatoriana",
+                    "resumen": "Ecuador tuvo un buen desempeño en el partido contra Paraguay, mostrando una solida defensa y un ataque efectivo. El empate 2-1 fue un resultado justo.",
+                    "fecha": "2023-11-09"
+                },
+                {
+                    "titulo": "Ecuador 3 - 1 Uruguay: Un meritorio empate para la selección ecuatoriana",
+                    "resumen": "Ecuador logró derrotar a Uruguay en un partido amistoso, mostrando un buen desempeño en el segundo tiempo. El empate 3-1 fue un resultado justo.",
+                    "fecha": "2023-11-06"
+                }
+            ]
         }
     }
 }
