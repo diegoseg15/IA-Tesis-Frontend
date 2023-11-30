@@ -3,10 +3,8 @@
 # dependencies
 /node_modules
 /.pnp
-/src/knowledge.json
 .pnp.js
 .mp3
-
 
 # testing
 /coverage

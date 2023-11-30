@@ -97,6 +97,7 @@ export function Chat() {
     } else {
       try {
         await stopRecording().then(async (response) => {
+          setMessageLoad(true);
           const transcription = await whisperTranscriptionAPI(response);
           if (response) {
             if (transcription.text) {
@@ -217,6 +218,13 @@ export function Chat() {
     }
   };
 
+  const manejarTeclaPresionada = (event) => {
+    event.preventDefault();
+    if (event.key === "*") {
+      handleSubmitRecord(event);
+    }
+  };
+
   return (
     <div className="overflow-hidden w-screen h-screen md:py-36 pt-44 pb-32">
       <div
@@ -289,6 +297,8 @@ export function Chat() {
             onChange={(event) => {
               setMessageUser(event.target.value);
             }}
+            onKeyDown={(event) => manejarTeclaPresionada(event)}
+            autoFocus
           />
           <button
             className="rounded-lg bg-[#00c0e0] disabled:bg-[#B0E0E6] text-white md:py-3 md:px-5 p-2 flex items-center justify-center md:space-x-1"
