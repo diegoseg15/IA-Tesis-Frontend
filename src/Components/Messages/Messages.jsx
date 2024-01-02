@@ -19,9 +19,9 @@ export function Messages(props) {
 
     // Agregar el texto entre ``` con estilo de resaltado
     highlightedParts.push(
-      <span key={startIndex} className="bg-black text-white p-2">
+      <div key={startIndex} className="bg-slate-900 text-white px-5 pb-5 m-3 rounded-lg">
         {match[1]}
-      </span>
+      </div>
     );
 
     lastIndex = endIndex;

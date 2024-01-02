@@ -107,6 +107,7 @@ export function Chat() {
               await gptAPI([...messageData, userMessage])
                 .then(async (gptResponse) => {
                   setMessageLoad(false);
+                  setMessageUser("");
                   const assistantMessage = {
                     role: "assistant",
                     content: gptResponse.text,
@@ -278,11 +279,11 @@ export function Chat() {
           controls
           ref={audioRef} // Add this line to connect the ref
         ></audio>
-        {duracion > 0 && (
+        {/* {duracion > 0 && (
           <div className="text-center p-2 text-gray-500">
             Duración total: {duracion} segundos
           </div>
-        )}
+        )} */}
         <div
           className="border-t flex items-center sm:space-x-4 space-x-0.5 py-4 md:px-10 sm:px-3 px-2 bg-gray-100"
           id="message-input"
@@ -297,7 +298,7 @@ export function Chat() {
             onChange={(event) => {
               setMessageUser(event.target.value);
             }}
-            onKeyDown={(event) => manejarTeclaPresionada(event)}
+            // onKeyDown={(event) => manejarTeclaPresionada(event)}
             autoFocus
           />
           <button
