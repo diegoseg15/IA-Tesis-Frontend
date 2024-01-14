@@ -6,8 +6,9 @@
                 "Instagram": "diegoseg_15",
                 "Github": "diegoseg15"
             },
+            "Sobre el": "Diego Segovia es un desarrollador con habilidades destacadas en la creación de sitios web y aplicaciones móviles. Experto en JavaScript, React JS, React Native y Python, también domina entornos no código como WordPress y Joomla. Fue parte de la asociación de la escuela de ingenierías en el año 2023 y la Federación de Estudiantes de la PUCESA (FEUCESA) en año 2024. Al final menciona el contacto.",
             "Año": "2023",
-            "Proyecto": "Fuiste elaborado por un proyecto de grado (tesis) con el nombre de (API de OpenAI para asistente robot programado en entornos web) donde se remplazo toda la programación por tecnologías más actuales como lo son JavaScript lo que permitio que tengas una interfaz virtual más moderna, de la API se usó dos modelos (GPT y Whisper) y amigable con el usuario. Ademas se mejoró tu estructura fisica más llamativa y que de más confianza al usuario."
+            "Proyecto": "Fuiste elaborado por un proyecto de grado (tesis) con el nombre de (API de OpenAI para asistente robot programado en entornos web) donde se remplazo toda la programación por tecnologías más actuales como lo son JavaScript lo que permitio que tengas una interfaz virtual más moderna, de la API se usó dos modelos (GPT y Whisper) y amigable con el usuario. Ademas se mejoró tu estructura fisica más llamativa y que de más confianza al usuario. Cuentas con 3 servo motores (para la cabeza, cuello y boca), un microfono Marvo MIC-01, Parlantes HP, un arduino UNO que mueve los servo motores (para esto se usa la librería jhonny-five y se una el pin 9 boca, pin 6 cuello y pin 10 cabeza). Tu sistema corre en una PC con Windows 10 pro de 64 bits. Tienes un procesador Intel Core i3 de Cuarta Generación y 4 Giganytes en RAM"
         },
         {
             "Nombres": [
@@ -23,6 +24,30 @@
             "Proyecto": "Se te Implementó como proyecto de grado (tesis) una base inteligente autómata para dotarte de un cuerpo y con esto lograr que seas un robot bailarín y seguidor de láser programado en Visual Basic 6"
         }
     ],
+    "PUCE": {
+        "Rector": "Doctor Fernando Ponce León, SJ.",
+        "Vicerrectora": "Dra. Nelly Patricia Carrera Burneo",
+        "sedes": [
+            {
+                "nombre": "PUCESA / PUCE Ambato"
+            },
+            {
+                "nombre": "PUCE Esmeraldas"
+            },
+            {
+                "nombre": "PUCE Ibarra"
+            },
+            {
+                "nombre": "PUCE Manabí"
+            },
+            {
+                "nombre": "PUCE Santo Domingo"
+            },
+            {
+                "nombre": "PUCE Amazonas"
+            }
+        ]
+    },
     "PUCESA": {
         "información General": {
             "mision de la PUCESA": "La misión de la Universidad es la constante búsqueda de la verdad y la promoción de la dignidad humana en todas sus dimensiones, mediante la investigación, la conservación y comunicación del saber, y la vinculación con la sociedad, para el desarrollo sostenible e integral, nacional e internacional.",
@@ -58,27 +83,41 @@
             ],
             "directivos de la PUCESA": {
                 "Prorrector": {
-                    "nombre": "Jorge Núñez Grijalva"
+                    "2024-actualidad": {
+                        "nombre": "Padre Juan Carlos Acosta Teneda",
+                        "titulos": [
+                            "Licenciado en Psicología",
+                            "Sacerdote diocesano",
+                            "Diploma Superior en Gestión Educativa",
+                            "Licenciado en Derecho Canónico (Máster)",
+                            "Máster en Bioética",
+                            "Doctor en Teología (PhD)"
+                        ],
+                        "Correo electrónico": "jacosta@pucesa.edu.ec"
+                    },
+                    "2019-2023": {
+                        "nombre": "Phd. Jorge Núñez Grijalva"
+                    }
                 },
                 "directivos": [
                     {
-                        "nombre": "Magister Miguel Torres A.",
+                        "nombre": "Magister Santiago Alejandro Acurio Maldonado",
                         "cargo": "Director Académico"
                     },
                     {
-                        "nombre": "Economista Miryam Alvarez",
+                        "nombre": "Magister Patricia Naranjo",
                         "cargo": "Directora Administrativa y Talento Humano"
                     },
                     {
-                        "nombre": "Señor Francisco León",
+                        "nombre": "Magister Catherine Shuguli",
                         "cargo": "Director de Estudiantes, Bienestar Estudiantil y Becas"
                     },
                     {
-                        "nombre": "Doctor Hugo Altamirano V.",
+                        "nombre": "Magister Diego Coca",
                         "cargo": "Procurador, Secretario General"
                     },
                     {
-                        "nombre": "Magister Juan Carlos Manjarres",
+                        "nombre": "Magister Alexandra Naranjo",
                         "cargo": "Coordinador Vinculación"
                     },
                     {
@@ -86,11 +125,11 @@
                         "cargo": "Director de la Oficina de Aseguramiento de la Calidad, Acreditación, Planificación y Proyectos"
                     },
                     {
-                        "nombre": "Ingeniero Emerson Pazmiño V.",
+                        "nombre": "Magister Rocío Acosta",
                         "cargo": "Director Financiero"
                     },
                     {
-                        "nombre": "Doctor C. Osmany Pérez B.",
+                        "nombre": "MAgister Rodrigo Moreta",
                         "cargo": "Coordinador Investigación"
                     },
                     {
@@ -102,16 +141,16 @@
                         "cargo": "Coordinador Oficina de Relaciones Internacionales y Cooperación Interinstitucional"
                     },
                     {
-                        "nombre": "P. Magister Juan Carlos Acosta",
+                        "nombre": "Magister Teresa Freire",
                         "cargo": "Director del Centro de Posgrados"
                     },
                     {
-                        "nombre": "Magister Diego Barragán",
+                        "nombre": "Magister Jairo Villena",
                         "cargo": "Coordinador de Marketing y Comunicación"
                     },
                     {
                         "nombre": "P. Magister Luis Abad",
-                        "cargo": "Director Pastoral"
+                        "cargo": "Director Pastoral Universitaria"
                     },
                     {
                         "nombre": "Magister Santiago Fierro",
@@ -169,14 +208,27 @@
         "Escuelas": {
             "Escuela de Ingenierías (EI)": {
                 "Director": {
-                    "nombre": "Santiago Maldonado Acurio Alejandro",
-                    "titulos": [
-                        "Magíster en Gerencia Informática",
-                        "Magíster en Docente y Currículo para la Educación Superior",
-                        "Ingeniero en Sistemas"
-                    ],
-                    "LineaInvestigacion": "Hábitat, infraestructura y movilidad – Tecnologías de la información y la comunicación. Educación, comunicación, culturas, sociedad y valores.",
-                    "nota": "Ademas de ser director tambien es docente"
+                    "2024-actualidad": {
+                        "nombre": "López Sevilla Galo Mauricio",
+                        "titulo": [
+                            "Magister en Informática",
+                            "Diploma Superior en Gerencia Informática",
+                            "Ingeniero en Sistemas"
+                        ],
+                        "Línea de Investigación": "Hábitat, infraestructura y movilidad – Tecnologías de la información y la comunicación.",
+                        "Correo electrónico": "glopez@pucesa.edu.ec"
+                    },
+                    "2021-2023": {
+                        "nombre": "Santiago Maldonado Acurio Alejandro",
+                        "titulos": [
+                            "Magíster en Gerencia Informática",
+                            "Magíster en Docente y Currículo para la Educación Superior",
+                            "Ingeniero en Sistemas"
+                        ],
+                        "LineaInvestigacion": "Hábitat, infraestructura y movilidad – Tecnologías de la información y la comunicación. Educación, comunicación, culturas, sociedad y valores.",
+                        "Correo electrónico": "sacurio@pucesa.edu.ec",
+                        "nota": "Ademas de ser director tambien era docente"
+                    }
                 },
                 "Docentes de la EI": [
                     {
@@ -191,6 +243,17 @@
                         "Correo electrónico": "jbalseca@pucesa.edu.ec"
                     },
                     {
+                        "nombre": "Santiago Maldonado Acurio Alejandro",
+                        "titulos": [
+                            "Magíster en Gerencia Informática",
+                            "Magíster en Docente y Currículo para la Educación Superior",
+                            "Ingeniero en Sistemas"
+                        ],
+                        "LineaInvestigacion": "Hábitat, infraestructura y movilidad – Tecnologías de la información y la comunicación. Educación, comunicación, culturas, sociedad y valores.",
+                        "Correo electrónico": "sacurio@pucesa.edu.ec",
+                        "nota": "Ademas de ser director academico y docente fue director de la escuela de ingenierias"
+                    },
+                    {
                         "nombre": "Freire Aillón Teresa Milena",
                         "titulo": [
                             "Magister en Gerencia Informática",
@@ -198,7 +261,7 @@
                             "Diploma Superior en Gerencia Informática",
                             "Ingeniero en Sistemas"
                         ],
-                        "Cargo": "Coordinador programa de Maestría de Ciberseguridad",
+                        "Cargo": "Directora del Centro de Posgrados",
                         "Línea de Investigación": "Hábitat, infraestructura y movilidad – Tecnologías de la información y la comunicación.",
                         "Correo electrónico": "tfreire@pucesa.edu.ec"
                     },
@@ -220,7 +283,6 @@
                             "Diploma Superior en Gerencia Informática",
                             "Ingeniero en Sistemas"
                         ],
-                        "Cargo": "Coordinador del Centro de Transferencia de Tecnología",
                         "Línea de Investigación": "Hábitat, infraestructura y movilidad – Tecnologías de la información y la comunicación.",
                         "Correo electrónico": "glopez@pucesa.edu.ec"
                     },
@@ -578,7 +640,7 @@
                     "Nombre": "Prorrectorado",
                     "Contactos": [
                         {
-                            "Prorrector": "PhD. Jorge Núñez",
+                            "Prorrector": "Padre Juan Carlos Acosta T.",
                             "Extensión": 3201
                         },
                         {
@@ -591,7 +653,7 @@
                     "Nombre": "Dirección Académica",
                     "Contactos": [
                         {
-                            "Director": "Magister Miguel Torres",
+                            "Director": "Magister Santiago Alejandro Acurio Maldonado",
                             "Extensión": 3214
                         },
                         {
@@ -621,7 +683,7 @@
                     "Nombre": "Dirección Administrativa de Talento Humano",
                     "Contactos": [
                         {
-                            "Directora": "Economista Catalina Alvarez",
+                            "Directora": "Magister Patricia Naranjo",
                             "Extensión": 3203
                         },
                         {
@@ -650,7 +712,7 @@
                     "Nombre": "Dirección Financiera",
                     "Contactos": [
                         {
-                            "Director Financiero": "Ingeniero Emerson Pazmiño",
+                            "Director Financiero": "Magister Rocío Acosta",
                             "Extensión": 3111
                         },
                         {
@@ -675,7 +737,7 @@
                     "Nombre": "Dirección de Estudiantes – Bienestar Estudiantil y Becas",
                     "Contactos": [
                         {
-                            "Director": "Señor Francisco León",
+                            "Director": "Magister Catherine Shuguli",
                             "Extensión": 3101
                         },
                         {
@@ -696,7 +758,7 @@
                     "Nombre": "Departamento de Pastoral Universitaria",
                     "Contactos": [
                         {
-                            "Director": "P. Magister Luis Abad",
+                            "Director": "Padre Magister Luis Abad",
                             "Extensión": 3212
                         },
                         {
@@ -709,7 +771,7 @@
                     "Nombre": "Centro de Posgrados",
                     "Contactos": [
                         {
-                            "Director": "P. Doctor Juan Carlos Acosta",
+                            "Director": "Maagister Teresa Milena Freire Aillón",
                             "Extensión": 1101
                         },
                         {
@@ -722,7 +784,7 @@
                     "Nombre": "Centro de Lenguas",
                     "Contactos": [
                         {
-                            "Directora": "Magister Soledad Miranda",
+                            "Directora": "Magister Juan José Ramos",
                             "Extensión": 2101
                         },
                         {
@@ -752,7 +814,7 @@
                     "Nombre": "Coordinación de Investigación",
                     "Contactos": [
                         {
-                            "Coordinador": "PhD. Osmany Pérez",
+                            "Coordinador": "Magister Rodrigo Moreta",
                             "Extensión": 2001
                         },
                         {
@@ -773,7 +835,7 @@
                     "Nombre": "Coordinación de Vinculación",
                     "Contactos": [
                         {
-                            "Coordinador": "Magister Juan Carlos Manjarres",
+                            "Coordinador": "Magister Alexandra Naranjo",
                             "Extensión": 3107
                         },
                         {
@@ -824,7 +886,7 @@
                     "Nombre": "Departamento de Comunicación y Marketing",
                     "Contactos": [
                         {
-                            "Coordinador": "Magister Diego Barragán",
+                            "Coordinador": "Magister Jairo Villena",
                             "Extensión": 3105
                         },
                         {
@@ -866,7 +928,7 @@
                     "Nombre": "Escuela de Administración de Empresas",
                     "Contactos": [
                         {
-                            "Directora": "MBA. Viviana Avellan",
+                            "Directora": "Magister Freddy Ibarra",
                             "Extensión": 2401
                         },
                         {
@@ -876,10 +938,6 @@
                         {
                             "Coordinador Administración de Empresas Semipresencial - Coordinador Contabilidad y Auditoria Semipresencial": "Magister Alejandra Cuesta",
                             "Extensión": 1412
-                        },
-                        {
-                            "Coordinador Negocios Internacionales": "Ingeniero Jairo Villena",
-                            "Extensión": 1414
                         }
                     ]
                 },
@@ -916,7 +974,7 @@
                     "Nombre": "Escuela de Jurisprudencia",
                     "Contactos": [
                         {
-                            "Director": "Abogado Santiago Morales",
+                            "Director": "Magister Christian Gavilanez",
                             "Extensión": 2201
                         },
                         {
@@ -929,7 +987,7 @@
                     "Nombre": "Escuela de Psicología",
                     "Contactos": [
                         {
-                            "Directora": "PhD. Varna Hernández",
+                            "Directora": "Mgister Luicía Almeida",
                             "Extensión": 1301
                         },
                         {
@@ -942,7 +1000,7 @@
                     "Nombre": "Escuela de Ingeniería",
                     "Contactos": [
                         {
-                            "Director": "Magister Santiago Acurio",
+                            "Director": "Magister Galo Lopez",
                             "Correo": "sacurio@pucesa.edu.ec",
                             "Extensión": 1103
                         },
@@ -958,14 +1016,10 @@
                     ]
                 },
                 {
-                    "Nombre": "Oficial de Seguridad de la Información",
+                    "Nombre": "Ciberseguridad",
                     "Contactos": [
                         {
-                            "Oficial de Seguridad de la Información": "Ingeniero Jorge Córdova",
-                            "Extensión": 3117
-                        },
-                        {
-                            "Asistente de Servicios Técnicos": "Tecnologo Milton Jerez",
+                            "coordinador": "Magister Verónica Pailiacho",
                             "Extensión": 3117
                         }
                     ]
@@ -1149,6 +1203,26 @@
                 },
                 {
                     "resumen": "Más de 500 empleados de la 'startup' de IA han firmado una carta en la que exigen la dimisión de su junta directiva por haber despedido a su cofundador y consejero delegado, Sam Altman"
+                }
+            ]
+        },
+        "Ecuador": {
+            "noticias": [
+                {
+                    "titulo": "Conflicto en Ecuador 2024",
+                    "resumen": "El presidente de Ecuador, Daniel Noboa, declaró el 'conflicto armado interno' en el país y ordenó a las fuerzas de seguridad 'neutralizar' a varios grupos criminales acusados de propagar la violencia extrema.",
+                    "fecha": "10 de enero de 2024",
+                    "nota": "el conflicto armado interno es tambien conocido como guuerra interna"
+                },
+                {
+                    "titulo": "Escape de José Adolfo Macías Villamar",
+                    "resumen": "José Adolfo Macías Villamar, líder del cartel de drogas Los Choneros, escapó de prisión. Esto provocó una serie de disturbios, secuestros y explosiones en todo el país.",
+                    "fecha": "9 de enero de 2024"
+                },
+                {
+                    "titulo": "53º Congreso Eucarístico Internacional en Quito",
+                    "resumen": "Se celebrará el 53º Congreso Eucarístico Internacional en Quito.",
+                    "fecha": "8-15 de septiembre de 2024"
                 }
             ]
         },

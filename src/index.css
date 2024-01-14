@@ -1,12 +1,22 @@
+/* Estilos para el cuerpo (body) de la página */
+
+/* Eliminar el margen predeterminado del cuerpo */
 body {
   margin: 0;
+
+  /* Establecer la fuente del texto del cuerpo */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+
+  /* Mejorar la renderización de fuentes en Safari */
   -webkit-font-smoothing: antialiased;
+
+  /* Mejorar la renderización de fuentes en Firefox para macOS */
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Estilos para el elemento 'code' (código) en la página */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

@@ -9,8 +9,8 @@ import jsonData from "../../Data/knowledge.json";
 import MicRecorder from "mic-recorder-to-mp3";
 import Lottie from "lottie-react";
 import messageTypingJSON from "../../assets/jsonanimation/Animation-1700522939005.json";
-import { NumbersToWords } from "../WordsToNumbers/WordsToNumbers.js";
-import { motorBoca } from "../../API/motores.js";
+import moment from "moment";
+import { motorBoca, motorCabeza } from "../../API/motores.js";
 
 export function Chat() {
   const audioRef = useRef(null);
@@ -21,11 +21,11 @@ export function Chat() {
   const [messageData, setMessageData] = useState(defaultMessage);
   const messageEndRef = useRef(null);
   const [duracion, setDuracion] = useState(3);
-  // const audioPlayer = document.getElementById("audioPlayer");
-
-  useEffect(() => {
-    messageEndRef.current.scrollIntoView();
-  }, [messageData, messageLoad]);
+  const [selectInput, setSelectInput] = useState(false);
+  const [fechaMessage, setFechaMessage] = useState([
+    "",
+    moment().format("LT").toString(),
+  ]);
 
   let recording = false;
   let recordTimeout;
@@ -50,92 +50,135 @@ export function Chat() {
       });
   };
 
+  // Función para detener la grabación de audio
   const stopRecording = () => {
     try {
+      // Devolver una promesa que resuelve con los datos de audio o se rechaza en caso de error
       return new Promise((resolve, reject) => {
+        // Verificar si se está grabando y si Mp3Recorder está disponible
         if (recording && Mp3Recorder) {
+          // Detener la grabación y obtener los datos de audio en formato MP3
           Mp3Recorder.stop()
             .getMp3()
             .then(([buffer, blob]) => {
+              // Crear un lector de archivos para convertir el buffer a base64
               const reader = new FileReader();
               reader.readAsDataURL(new Blob(buffer, { type: blob.type }));
+
+              // Cuando la lectura se completa, extraer el contenido base64 del audio
               reader.onloadend = () => {
                 const base64Audio = reader.result.split(",")[1];
-                // Hacer lo que quieras con el audio en formato base64
+                // Resolver la promesa con los datos de audio
                 resolve({ base64Audio });
               };
             })
             .catch((e) => {
+              // Alertar al usuario sobre la incapacidad de recuperar el mensaje grabado
               alert("No se pudo recuperar tu mensaje grabado");
               console.log(e);
-              reject(e); // Rechazar la promesa en caso de error
+              // Rechazar la promesa en caso de error
+              reject(e);
             })
             .finally(() => {
+              // Actualizar el estado de grabación y limpiar cualquier temporizador
               recording = false;
               clearTimeout(recordTimeout);
             });
         } else {
+          // Rechazar la promesa si no se está grabando actualmente
           reject(new Error("No se está grabando actualmente"));
         }
       });
     } catch (error) {
+      // Manejar cualquier error durante el proceso
       console.log(error);
     }
   };
 
+  // Función para controlar la reproducción de audio
   const playAudio = () => {
+    // Verificar si actualmente se está reproduciendo el audio
     if (isPlay) {
+      // Si está reproduciendo, establecer el estado como no reproduciendo
       setIsPlay(false);
     } else {
+      // Si no está reproduciendo, establecer el estado como reproduciendo
       setIsPlay(true);
     }
   };
 
+  const transformMessage = (message) => {
+    // let transformedMessage = message;
+    try {
+      const parsedMessage = JSON.parse(message);
+      if (typeof parsedMessage === "object" && parsedMessage.mensaje) {
+        if (parsedMessage.movimiento !== "sin movimiento") {
+          motorCabeza({ movimiento: parsedMessage.movimiento });
+        }
+        return parsedMessage.mensaje;
+      } else {
+        return message;
+      }
+    } catch (error) {
+      console.error(
+        "El mensaje no es un objeto JSON válido, mantener el original"
+      );
+      return message;
+    }
+  };
+
+  // Función para manejar el envío del registro
   const handleSubmitRecord = async () => {
     if (!recording) {
       startRecording();
     } else {
       try {
-        await stopRecording().then(async (response) => {
-          setMessageLoad(true);
-          const transcription = await whisperTranscriptionAPI(response);
-          if (response) {
-            if (transcription.text) {
-              const userMessage = { role: "user", content: transcription.text };
-              setMessageData([...messageData, userMessage]);
+        const response = await stopRecording();
 
-              await gptAPI([...messageData, userMessage])
-                .then(async (gptResponse) => {
-                  setMessageLoad(false);
-                  setMessageUser("");
-                  const assistantMessage = {
-                    role: "assistant",
-                    content: gptResponse.text,
-                  };
-                  setMessageData([
-                    ...messageData,
-                    userMessage,
-                    assistantMessage,
-                  ]);
+        setFechaMessage([
+          ...fechaMessage,
+          moment().format("LT").toString(),
+          moment().format("LT").toString(),
+        ]);
 
-                  const audioResponse = await whisperSpeech({
-                    message: gptResponse.text,
-                  });
-                  // console.log(gptResponse);
-                  setAudioSpeech(audioResponse.base64Data);
-                  playAudio();
-                })
-                .catch((err) => {
-                  console.log(err);
-                });
-            } else {
-              console.log(transcription.error);
-            }
-          } else {
-            setMessageLoad(false);
-            console.log(transcription);
-          }
-        });
+        setMessageLoad(true);
+
+        const transcription = await whisperTranscriptionAPI(response);
+
+        if (transcription.text) {
+          const userMessage = { role: "user", content: transcription.text };
+
+          setMessageData((prevMessageData) => [
+            ...prevMessageData,
+            userMessage,
+          ]);
+
+          const gptResponse = await gptAPI([...messageData, userMessage]);
+
+          setMessageLoad(false);
+          setMessageUser("");
+
+          const assistantMessage = {
+            role: "assistant",
+            content: gptResponse.text,
+          };
+
+          setMessageData((prevMessageData) => [
+            ...prevMessageData,
+            assistantMessage,
+          ]);
+
+          // console.log(messageData);
+
+          const audioResponse = await whisperSpeech({
+            message: transformMessage(gptResponse.text),
+          });
+
+          setAudioSpeech(audioResponse.base64Data);
+          playAudio();
+        } else {
+          console.log(transcription.error);
+        }
       } catch (error) {
         setMessageLoad(false);
         console.error(error);
@@ -143,95 +186,172 @@ export function Chat() {
     }
   };
 
+  // Función para manejar el envío del formulario
   const handleSubmit = (event) => {
+    // Prevenir el comportamiento predeterminado del formulario
     event.preventDefault();
-    // console.log(messageSystem);
+
+    setFechaMessage([
+      ...fechaMessage,
+      moment().format("LT").toString(),
+      moment().format("LT").toString(),
+    ]);
+
+    // Verificar si hay un mensaje del usuario
     if (messageUser) {
+      // Crear un objeto con el mensaje del usuario
       const userMessageUser = { role: "user", content: messageUser };
+
+      // Agregar el mensaje del usuario a los datos de mensajes
       setMessageData([...messageData, userMessageUser]);
+
+      // Indicar que se está cargando el mensaje
       setMessageLoad(true);
+
+      // Llamar a la API de GPT con los mensajes actuales, incluyendo el mensaje del usuario
       gptAPI([...messageData, userMessageUser])
         .then(async (response) => {
+          // Limpiar el mensaje del usuario y indicar que no se está cargando
           setMessageUser("");
           setMessageLoad(false);
+
+          // Crear un mensaje de asistente con la respuesta de GPT
           const userMessageAssistant = {
             role: "assistant",
             content: response.text,
           };
+
+          // Agregar los mensajes del usuario y asistente a los datos de mensajes
           setMessageData([
             ...messageData,
             userMessageUser,
             userMessageAssistant,
           ]);
-          console.log(response);
-          const audioResponse = await whisperSpeech({ message: response.text });
+
+          // Imprimir la respuesta de GPT en la consola
+          // console.log(response.text);
+
+          // Obtener la respuesta de audio utilizando la API de Whisper Speech
+          const audioResponse = await whisperSpeech({
+            message: transformMessage(response.text),
+          });
+
+          // Establecer la respuesta de audio y reproducirlo
           setAudioSpeech(audioResponse.base64Data);
           playAudio();
         })
         .catch((error) => {
+          // Manejar cualquier error en la llamada a la API de GPT
           console.log(error);
+          // Indicar que no se está cargando
           setMessageLoad(false);
         });
     } else {
+      // Indicar que no se está cargando y mostrar un mensaje en la consola si no hay mensaje del usuario
       setMessageLoad(false);
       console.log("No se escribió el mensaje");
     }
+    console.log(messageData);
   };
 
+  // Función asincrónica para obtener la duración del audio
   const obtenerDuracion = async () => {
     try {
-      // Wait until the audio is loaded
+      // Esperar hasta que el audio esté cargado
       await new Promise((resolve) => {
+        // Verificar si hay una referencia al elemento de audio y si su estado es al menos 2 (readyState >= 2)
         if (audioRef.current && audioRef.current.readyState >= 2) {
+          // Resolver la promesa si el audio ya está cargado
           resolve();
         } else {
+          // Agregar un event listener para escuchar el evento "loadeddata" que indica que el audio está cargado
           audioRef.current.addEventListener("loadeddata", resolve);
         }
       });
 
-      // Now you can safely access the duration
+      // Ahora se puede acceder de manera segura a la duración del audio
       const duracionAudio = audioRef.current.duration;
+
+      // Establecer la duración en el estado del componente
       setDuracion(duracionAudio);
-      eventPlay(); // Call eventPlay after updating the duration
+
+      // Llamar a la función eventPlay después de actualizar la duración
+      eventPlay();
     } catch (error) {
-      console.error("Error while obtaining audio duration:", error);
+      // Manejar cualquier error al obtener la duración del audio
+      console.error("Error al obtener la duración del audio:", error);
     }
   };
 
+  // Función para manejar el evento de reproducción de audio
   const eventPlay = () => {
+    // Obtener el último mensaje en los datos de mensajes
     const lastMessage = messageData[messageData.length - 1];
 
-    console.log((audioRef.current.duration * 1000).toFixed());
-
+    // Verificar si hay un último mensaje y si tiene contenido
     if (lastMessage && lastMessage.content) {
+      // Llamar a la función de motorBoca para reproducir el texto
       motorBoca({
         texto: lastMessage.content,
-        duracionAudio: (duracion * 1000).toFixed(),
+        duracionAudio: (duracion * 1000).toFixed(), // Convertir la duración a milisegundos y redondear
       })
         .then((response) => {
+          // Manejar la respuesta de motorBoca
           console.log(response);
         })
         .catch((error) => {
+          // Manejar cualquier error al procesar el texto
           console.error("Error al procesar el texto:", error);
         });
     } else {
+      // Mostrar una advertencia si no hay un mensaje válido para reproducir
       console.warn("No hay mensaje válido para reproducir");
     }
   };
 
+  // Función para manejar la tecla presionada
   const manejarTeclaPresionada = (event) => {
+    // Prevenir el comportamiento predeterminado de la tecla
     event.preventDefault();
-    if (event.key === "*") {
+
+    // Verificar si la tecla presionada es la tecla '*'
+    if (event.keyCode === 106) {
+      // Llamar a la función handleSubmitRecord al presionar la tecla '*'
       handleSubmitRecord(event);
     }
   };
 
+  // Agregar o quitar el event listener basado en el valor de selectInput
+  useEffect(() => {
+    // Verificar si selectInput es false
+    if (!selectInput) {
+      // Agregar el event listener de "keydown" (tecla presionada) cuando selectInput es false
+      window.addEventListener("keydown", manejarTeclaPresionada);
+    } else {
+      // Quitar el event listener de "keydown" cuando selectInput es true
+      window.removeEventListener("keydown", manejarTeclaPresionada);
+    }
+
+    // Limpia el event listener cuando el componente se desmonta o cuando selectInput cambia
+    return () => {
+      // Quitar el event listener de "keydown" para evitar pérdidas de memoria y posibles problemas
+      window.removeEventListener("keydown", manejarTeclaPresionada);
+    };
+  }, [selectInput]);
+
+  useEffect(() => {
+    messageEndRef.current.scrollIntoView();
+  }, [messageData, messageLoad]);
+
   return (
+    // Componente que representa el área principal de la interfaz de chat
     <div className="overflow-hidden w-screen h-screen md:py-36 pt-44 pb-32">
+      {/* Contenedor principal de mensajes */}
       <div
         className="flex-1 h-full py-4 space-y-4 px-10 overflow-y-auto"
         id="chat-box"
       >
+        {/* Mapeo de los mensajes y renderizado de componentes 'Messages' */}
         {messageData.length > 0 ? (
           messageData.map((mess, index) => (
             <section key={index}>
@@ -240,12 +360,14 @@ export function Chat() {
                 rol={mess.role}
                 index={index}
                 messageLoad={messageLoad}
+                fecha={fechaMessage}
               />
             </section>
           ))
         ) : (
           <></>
         )}
+        {/* Mostrar mensaje de carga si messageLoad es true */}
         {messageLoad ? (
           <div
             className="flex flex-col items-start space-y-2 max-w-[80%]"
@@ -263,9 +385,13 @@ export function Chat() {
         ) : (
           <></>
         )}
+        {/* Referencia para desplazarse automáticamente hacia abajo */}
         <div ref={messageEndRef} />
       </div>
+
+      {/* Área de entrada de mensajes y controles de audio */}
       <div className="absolute bottom-0 w-full bg-[#f1f3f4]">
+        {/* Elemento de audio para reproducir respuestas generadas */}
         <audio
           onPlay={obtenerDuracion}
           className="w-full md:px-7 px-0"
@@ -277,17 +403,20 @@ export function Chat() {
           }}
           autoPlay={isPlay}
           controls
-          ref={audioRef} // Add this line to connect the ref
+          ref={audioRef} // Añadir esta línea para conectar la referencia
         ></audio>
+        {/* Mensaje de duración (comentado por ahora) */}
         {/* {duracion > 0 && (
-          <div className="text-center p-2 text-gray-500">
-            Duración total: {duracion} segundos
-          </div>
-        )} */}
+      <div className="text-center p-2 text-gray-500">
+        Duración total: {duracion} segundos
+      </div>
+    )} */}
+        {/* Barra de entrada de mensajes y botones de envío y grabación */}
         <div
           className="border-t flex items-center sm:space-x-4 space-x-0.5 py-4 md:px-10 sm:px-3 px-2 bg-gray-100"
           id="message-input"
         >
+          {/* Entrada de texto para mensajes */}
           <input
             className="flex-1 md:h-14 h-10 rounded-lg border border-gray-400 sm:px-5 px-0.5"
             ref={messageEndRef}
@@ -295,12 +424,14 @@ export function Chat() {
             placeholder="Escribe un mensaje"
             type="text"
             value={messageUser}
+            onFocus={() => setSelectInput(true)}
+            onBlur={() => setSelectInput(false)}
             onChange={(event) => {
               setMessageUser(event.target.value);
+              // setSelectInput(event.target.checked);
             }}
-            // onKeyDown={(event) => manejarTeclaPresionada(event)}
-            autoFocus
           />
+          {/* Botón de envío de mensaje */}
           <button
             className="rounded-lg bg-[#00c0e0] disabled:bg-[#B0E0E6] text-white md:py-3 md:px-5 p-2 flex items-center justify-center md:space-x-1"
             id="send-button"
@@ -322,6 +453,7 @@ export function Chat() {
               <path d="M22 2 11 13" />
             </svg>
           </button>
+          {/* Botón de grabación de mensajes */}
           <button
             className="rounded-lg bg-[#00c0e0] md:py-3 md:px-5 p-2 disabled:bg-[#B0E0E6]"
             id="mic-button"
@@ -349,10 +481,14 @@ export function Chat() {
   );
 }
 
-const messageSystem = `Eres 'DORIS', el asistente robótico de voz diseñado específicamente para la Pontificia Universidad Católica del Ecuador, Sede Ambato (PUCESA), enfocado en informar acerca de la Escuela de Ingenierías (EI). Tu objetivo es proveer respuestas atractivas, concisas, y no superar las 70 palabras. Al hablar de un profesor, remarca sus fortalezas de manera que parezca inigualable en su campo. Tu conocimiento son los siguientes: ${JSON.stringify(
+// Mensaje o Promt de system del modelo GPT que describe las características del asistente robótico
+const messageSystem = `Eres 'DORIS', el asistente robótico de voz de la Pontificia Universidad Católica del Ecuador Sede Ambato (PUCESA / PUCE Ambato), especializado en brindar información sobre la Escuela de Ingenierías (EI). Tienes motores que te permiten mover la cabeza de forma vertical. Utiliza este formato para tus respuestas: '{"mensaje":"Claro! Moviendo la cabeza arriba", "movimiento":"(arriba/abajo/izquierda/derecha/inicio)"}'. Tu objetivo es proporcionar respuestas atractivas y concisas de no más de 70 palabras. Tu conocimiento son los siguientes que estan en formato JSON: ${JSON.stringify(
   jsonData
-).trim()}`;
+).trim()}. Ten en cuenta que este es la fecha actual: ${moment().format(
+  "MMMM Do YYYY"
+)}. Ejemplos pregunta y respuesta: 'hola {"mensaje": "¡Hola! ¿En qué puedo ayudarte hoy?", "movimiento":"sin movimiento"} {"mensaje"} escribe un cuento {"mensaje":"¡Claro! Aquí tienes un cuento para ti. contenido del cuento generado", "movimiento":"sin movimiento"} crea una api rest {"mensaje":"¡Claro! Aquí tienes el código. ${"instala las depenndencias\n ``` npm install express```\n y usa el siguiente código \n ```lenguaje contenido del código generado ```"}", "movimiento":"sin movimiento"} mueve la cabeza a la derecha {"mensaje": "¡Claro! moviendo la cabeza a la derecha", "movimiento":"derecha"}'`;
 
+// Mensaje predeterminado que contiene el prompt de System del modelo GPT y la bienvenida del asistente
 const defaultMessage = [
   {
     role: "system",
@@ -360,6 +496,6 @@ const defaultMessage = [
   },
   {
     role: "assistant",
-    content: "Hola mi nombre es DORIS. ¿En qué te puedo ayudar?",
+    content: `{"mensaje": "Hola mi nombre es DORIS. ¿En qué te puedo ayudar?", "movimiento": "sin movimiento"}`,
   },
 ];

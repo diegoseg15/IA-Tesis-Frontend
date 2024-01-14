@@ -1,10 +1,15 @@
 /* styles.css */
 
+/* Inclusión de estilos base de Tailwind CSS */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Estilos personalizados para la clase '.gif_player img' */
 .gif_player img {
-    border: 3px solid cornflowerblue;
-    width: 100%;
-  }
+  /* Agregar un borde de 3 píxeles sólido con color 'cornflowerblue' alrededor de la imagen */
+  border: 3px solid cornflowerblue;
+
+  /* Establecer el ancho de la imagen al 100% del contenedor */
+  width: 100%;
+}

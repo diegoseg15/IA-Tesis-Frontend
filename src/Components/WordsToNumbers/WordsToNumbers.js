@@ -1,4 +1,6 @@
+// Función para convertir palabras a números en un mensaje
 export function wordsToNumbers(message) {
+  // Convertir el mensaje a una cadena de texto y reemplazar las palabras con sus equivalentes numéricos
   const messageData = message
     .toString()
     .replace("cero", "0")
@@ -15,13 +17,15 @@ export function wordsToNumbers(message) {
   return messageData;
 }
 
+// Función para convertir números a palabras en un mensaje
 export function NumbersToWords(message) {
+  // Objeto que mapea números a sus equivalentes en palabras
   const numbers = {
     0: "cero",
     1: "uno",
     2: "dos",
     3: "tres",
-    4: "Cuatro",
+    4: "cuatro",
     5: "cinco",
     6: "seis",
     7: "siete",
@@ -29,21 +33,21 @@ export function NumbersToWords(message) {
     9: "nueve",
   };
 
-  // Convert the message to lowercase and split it into words
+  // Convertir el mensaje a minúsculas y dividirlo en palabras
   const words = message.toLowerCase().split(" ");
 
-  // Replace each word with its numeric equivalent
+  // Reemplazar cada palabra con su equivalente numérico, si existe en el objeto 'numbers'
   const numericWords = words.map((word) => {
-    // Check if the word is in the 'numbers' object
+    // Verificar si la palabra está presente en el objeto 'numbers'
     if (numbers.hasOwnProperty(word)) {
       return numbers[word];
     } else {
-      // If the word is not found in the object, keep it unchanged
+      // Si la palabra no se encuentra en el objeto, mantenerla sin cambios
       return word;
     }
   });
 
-  // Join the numeric words back into a sentence
+  // Unir las palabras numéricas de nuevo en una oración
   const numericSentence = numericWords.join(" ");
 
   return numericSentence;
