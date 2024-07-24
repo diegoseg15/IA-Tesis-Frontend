@@ -1,3 +1,7 @@
+<div width="100%">
+    <img src="https://github.com/diegoseg15/lector-txt-java/blob/main/src/assets/Captura%20de%20pantalla%202024-02-25%20185026.png?raw=true" alt="presentación de la app para leer txt" />
+</div>
+
 # Asistente Robot DORIS - Frontend Aplicación React
 
 Este proyecto es una aplicación React que implementa el asistente robótico de voz DORIS. DORIS está diseñado específicamente para la Pontificia Universidad Católica del Ecuador, Sede Ambato (PUCESA), con un enfoque en proporcionar información sobre la Escuela de Ingenierías (EI).
@@ -55,4 +59,3 @@ La aplicación estará disponible en [http://localhost:3000](http://localhost:30
 ## Mensaje de Sistema Predeterminado
 
 El chat comienza con un mensaje de sistema que proporciona información sobre DORIS y sus capacidades. Este mensaje se encuentra en `defaultMessage` en `Chat.js`.
-
