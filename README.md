@@ -6,6 +6,13 @@
 
 Este proyecto es una aplicación React que implementa el asistente robótico de voz DORIS. DORIS está diseñado específicamente para la Pontificia Universidad Católica del Ecuador, Sede Ambato (PUCESA), con un enfoque en proporcionar información sobre la Escuela de Ingenierías (EI).
 
+## Licencia
+
+Este proyecto es propiedad de **Diego Fernando Segovia Escobar** y la **Pontificia Universidad Católica del Ecuador Sede Ambato (PUCE Ambato)**.  
+Forma parte de la tesis de grado desarrollada para la obtención del título de grado en la PUCE Ambato.
+
+Todos los derechos reservados. No se permite la reproducción, distribución, ni modificación total o parcial sin el consentimiento explícito de los propietarios.
+
 ## Contenido del Proyecto
 
 ### `src/App.js`
