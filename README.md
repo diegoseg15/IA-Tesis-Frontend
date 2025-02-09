@@ -1,6 +1,4 @@
-<div width="100%">
-    <img src="https://github.com/diegoseg15/IA-Tesis-Frontend/blob/main/src/assets/image.png?raw=true" alt="presentación de la app asistente DORIS" />
-</div>
+![Presentación de la app asistente DORIS](https://github.com/diegoseg15/IA-Tesis-Frontend/blob/main/src/assets/image.png?raw=true)
 
 # Asistente Robot DORIS - Frontend Aplicación React
 
